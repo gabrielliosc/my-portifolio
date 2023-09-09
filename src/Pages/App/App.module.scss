@@ -1,0 +1,16 @@
+//Color Pallete
+$color1: #cc2649;
+$color2: #992c4b ;
+$color3: #66324c ;
+$color4: #33384e ;
+$color5: #003e4f;
+$fontColor: #3b3b3b;
+$fontColor_2: #eeebeb;
+
+*{ /*----Elementos importantes no começo do projeto---*/
+    margin: 0; /*IMPORTANTE!! Para "Limpar" as margens default*/
+    padding: 0;/*IMPORTANTE!! Para "Limpar" os paddings default*/
+    box-sizing: border-box;
+    /*----------------------------------------------*/
+    font-family: 'Open Sans', sans-serif;
+}

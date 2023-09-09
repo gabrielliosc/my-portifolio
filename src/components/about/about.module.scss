@@ -1,0 +1,56 @@
+//Color Pallete
+$color1: #cc2649;
+$color2: #992c4b ;
+$color3: #66324c ;
+$color4: #33384e ;
+$color5: #003e4f;
+$fontColor: #3b3b3b;
+$fontColor_2: #eeebeb;
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $color5;
+    padding: 10px 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .artist{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+
+        .collumn{
+            text-align: justify;
+            padding: 10px;
+            width: 50%;
+        }
+        .artistPicture{
+            height: 500px;
+            border: 2px solid $color3;
+            border-radius: 20px;
+            box-shadow: 10px 10px 0px 0px $color3;
+        }
+    }
+    span{
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        } 
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    h1{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .chat{
+        height: 120px;
+        width: 200px;
+    }
+
+
+}
