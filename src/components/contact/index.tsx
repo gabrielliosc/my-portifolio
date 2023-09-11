@@ -1,6 +1,8 @@
+import style from './contact.module.scss';
+
 export default function Contact(){
     return (
-    <div>
+    <div className={style.contact}>
         <h3>Contato</h3>
         <ul>
             <li><a href="mailto:gabrielli.osc@gmail.com">gabrielli.osc@gmail.com</a></li>

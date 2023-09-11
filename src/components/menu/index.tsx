@@ -1,4 +1,6 @@
-//import style from './menu.module.scss';
+import style from './menu.module.scss';
+
+
 export default function Menu() {
     const pages = [{
         description: 'Sobre Mim',
@@ -21,14 +23,14 @@ export default function Menu() {
     }]
 
     return (
-        <ul>
-            {pages.map((page, index) => (
-                <div>
+        <div className={style.nav}>
+            <ul>
+                {pages.map((page, index) => (
                     <li key={index}>
                         <a href={page.route}>{page.description}</a>  
                     </li>
-                </div>
-            ))}
-        </ul>
+                ))}
+            </ul>
+        </div>
     )
 }

@@ -1,56 +1,47 @@
 //Color Pallete
-$color1: #cc2649;
-$color2: #992c4b ;
-$color3: #66324c ;
-$color4: #33384e ;
-$color5: #003e4f;
+$color1: #dd44c7 ;
+$color2: #c757ca;
+$color3: #f066a6 ;
+$color4: #030422;
+$color5: #291b4d;
+$color6: #321b4d;
+$color7: #6c528b;
+$color8: #9ba3f5;
+
+
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
+
 
 
 .about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: $color5;
+    align-items: center;
+    background-color: $color4;
     padding: 10px 50px;
     margin-top: 50px;
     margin-bottom: 100px;
 
-    .artist{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-
-        .collumn{
-            text-align: justify;
-            padding: 10px;
-            width: 50%;
-        }
-        .artistPicture{
-            height: 500px;
-            border: 2px solid $color3;
-            border-radius: 20px;
-            box-shadow: 10px 10px 0px 0px $color3;
-        }
+    img.profile{        
+        height: 200px;
+        width: 200px;
+        border: 2px solid $color3;
+        border-radius: 50%;
+        //box-shadow: 10px 10px 0px 0px $color2;
     }
-    span{
-        h2{
-            text-align: center;
-            margin-bottom: 10px;
-        } 
-        p{
-            margin-bottom: 10px;
-        }
+    .column{
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
     }
-    h1{
+    h1{        
         margin: 10px 0px;
         width: 100%;
+        text-align: center;
+        border-bottom: 1px solid $color3;
     }
-    .chat{
-        height: 120px;
-        width: 200px;
-    }
+
 
 
 }

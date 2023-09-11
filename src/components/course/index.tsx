@@ -1,3 +1,5 @@
+import style from './course.module.scss';
+
 export default function Courses(){
     const courses = [{
         name: 'React',
@@ -5,17 +7,17 @@ export default function Courses(){
         certificate: './'
     }]
     return (
-        <>
-        <h2>Cursos</h2>
-        <ul>
-            {courses.map((course, index) => (
-                <li key={index}>
-                    <h3> Curso: {course.name}</h3>
-                    <p> Instituição: {course.school}</p>                    
-                    <p> Certificado: {course.certificate}</p>
-                </li>
-            ))}
-        </ul>
-        </>
+        <div className={style.courses}>
+            <h1>Cursos</h1>
+            <ul>
+                {courses.map((course, index) => (
+                    <li key={index}>
+                        <h3> Curso: {course.name}</h3>
+                        <p> Instituição: {course.school}</p>                    
+                        <p> Certificado: {course.certificate}</p>
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }

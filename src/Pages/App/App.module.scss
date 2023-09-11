@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi&family=Open+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
 //Color Pallete
-$color1: #cc2649;
-$color2: #992c4b ;
-$color3: #66324c ;
-$color4: #33384e ;
-$color5: #003e4f;
+$color1: #dd44c7 ;
+$color2: #c757ca;
+$color3: #f066a6 ;
+$color4: #030422;
+$color5: #291b4d;
+$color6: #321b4d;
+$color7: #6c528b;
+$color8: #9ba3f5;
+
+
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
 
-*{ /*----Elementos importantes no começo do projeto---*/
-    margin: 0; /*IMPORTANTE!! Para "Limpar" as margens default*/
-    padding: 0;/*IMPORTANTE!! Para "Limpar" os paddings default*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    color: $fontColor_2;
+    background-color: $color4;
     box-sizing: border-box;
-    /*----------------------------------------------*/
     font-family: 'Open Sans', sans-serif;
+    h1 {
+        font-family: 'Playfair Display', serif;
+    }
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Import Components
 import Project from '../../components/project';
 import Menu from '../../components/menu';
 import Experience from '../../components/experience';
@@ -7,9 +9,13 @@ import Education from '../../components/education';
 import Courses from '../../components/course';
 import Contact from '../../components/contact';
 
+//Import style
+import style from "./App.module.scss";
+
+
 function App() {
   return (
-    <div className="App">
+    <div className={style.App}>
       <Menu />
       <About />
       <Project />

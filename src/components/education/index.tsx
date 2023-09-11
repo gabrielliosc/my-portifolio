@@ -1,3 +1,6 @@
+
+import style from './education.module.scss';
+
 export default function Education() {
     const education = [
         {
@@ -12,8 +15,8 @@ export default function Education() {
         }
     ]
     return (
-        <div>
-            <h2>Educação</h2>
+        <div className={style.education}>
+            <h1>Educação</h1>
             <ul> {education.map((educItem, index) => (
                 <li key={index}>
                     <p>{educItem.period}</p>

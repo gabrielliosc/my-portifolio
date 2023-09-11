@@ -1,0 +1,47 @@
+//Color Pallete
+$color1: #dd44c7 ;
+$color2: #c757ca;
+$color3: #f066a6 ;
+$color4: #030422;
+$color5: #291b4d;
+$color6: #321b4d;
+$color7: #6c528b;
+$color8: #9ba3f5;
+
+
+$fontColor: #3b3b3b;
+$fontColor_2: #eeebeb;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        li{ 
+            border: 1px dashed $color7;
+            border-radius: 20px;
+            box-shadow: 0px 2px 10px 4px $color6;
+            padding: 10px;
+            margin: 15px;         
+            list-style: none; 
+
+            a{  
+                background-image: url('../../assets/img/arrow-up.svg');
+                background-repeat: no-repeat;
+                background-position: 100%;
+                text-align: right;
+                vertical-align: top;
+                color: $fontColor_2;
+                text-decoration: none;
+                padding: 15px;
+            }           
+        }
+    }
+   
+    h3{ 
+        margin: 10px 0px;
+        width: 290px;
+        text-align: center;
+        border-bottom: 1px solid $color3;
+    }
+}

@@ -1,3 +1,6 @@
+import style from './experience.module.scss';
+
+
 export default function Experience(){
     const experiences = [{
         title: 'SMAS',
@@ -6,7 +9,9 @@ export default function Experience(){
         skills: 'Python'
     }]
     return(
-        <ul>
+        <div className={style.experiences}>
+            <h1>Experiências</h1>
+            <ul>
             {experiences.map((experience, index) => (
                 <li key={index}>
                     <h3>{experience.title}</h3>
@@ -15,6 +20,8 @@ export default function Experience(){
                     <p>{experience.skills}</p>
                 </li>
             ))}
-        </ul>
+            </ul>
+        </div>
+        
     )
 }
