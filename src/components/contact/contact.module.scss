@@ -2,26 +2,45 @@
 $color1: #dd44c7 ;
 $color2: #c757ca;
 $color3: #c9186a ;
+$color3_op: #c9186bbb ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
+$gradient: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);
 
 
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
+$fontColor_3: #d65b95 ;
+
+$backgroundColor1: #1c181c;
+$backgrounColor2_element: #110e11;
+$backgroundColor2: linear-gradient(#110e11 0%, #0b070b 100%);
+
+$borderColor1: #2b262b;
 
 .contact {    
     padding: 10px 0px;    
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
+        margin: 0px 10px;
+        padding: 5px;
+        @media (min-width: 992px){ 
+            justify-content: flex-start;
+            margin: 0px;
+            padding: 0px;
+        }
         li{ 
             list-style: none;
-            text-align: start;
-            padding-right:10px;
+            text-align: center;
+            @media (min-width: 992px){
+                padding-right:10px;
+                text-align: start;
+            }
             a{  
                 display: block; 
                 position: relative;     
@@ -29,16 +48,17 @@ $fontColor_2: #eeebeb;
                 width: 30px; 
                 color: $fontColor_2;
                 text-decoration: none;  
-                margin: 10px; 
-                margin-left: 0px;           
+                margin: 10px;           
                 padding: 15px;    
                 border: 3px solid #353434;        
                 border-radius: 10px;   
                 background-color: $color5;  
                 background-repeat: no-repeat;
                 background-position-x: center;
-                background-position-y: center;  
-                
+                background-position-y: center; 
+                @media (min-width: 992px){ 
+                    margin-left: 0px; 
+                }
                 .tooltiptext{
                     font-size: 10px;
                     visibility: hidden;

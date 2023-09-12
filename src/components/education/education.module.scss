@@ -2,15 +2,22 @@
 $color1: #dd44c7 ;
 $color2: #c757ca;
 $color3: #c9186a ;
+$color3_op: #c9186bbb ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
 
-
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
+$fontColor_3: #d65b95 ;
+
+$backgroundColor1: #1c181c;
+$backgrounColor2_element: #110e11;
+$backgroundColor2: linear-gradient(#110e11 0%, #0b070b 100%);
+
+$borderColor1: #2b262b;
 
 .education {
     display: flex;
@@ -19,31 +26,26 @@ $fontColor_2: #eeebeb;
     padding: 0px 50px;
     margin-top: 50px;
     margin-bottom: 40px;
+    background-color: $backgrounColor2_element;
 
     @media (min-width: 992px){ 
         margin: 100px;
         padding: 40px 50px;
-        background:
-        linear-gradient(to right, $color3 20px, transparent 5px) 0 0,
-        linear-gradient(to right, $color3 20px, transparent 5px) 0 100%,
-        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 0,
-        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 100%,
-        linear-gradient(to bottom, $color3 20px, transparent 5px) 0 0px,
-        linear-gradient(to bottom, $color3 20px, transparent 5px) 100% 0,
-        linear-gradient(to top,$color3 20px, transparent 5px) 0 100%,
-        linear-gradient(to top, $color3 20px, transparent 5px) 100% 100%;
-        background-repeat: no-repeat;
-        background-size: 70px 70px;
         border-radius: 10px;
+        background-color: $backgroundColor1;
+        border: 2px solid $borderColor1;
+        max-width: 1200px;
+        align-self: center;
     }
     ul {
         @media (min-width: 992px){ 
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-around;
-            width: 100%;
+            width: auto;
             margin-top: 50px;
             border-top: 1px solid $color8;
+            padding: 0px 30px;
         }
         li{
             margin: 15px 0px;       
@@ -52,14 +54,16 @@ $fontColor_2: #eeebeb;
                 display: none;
             }
             @media (min-width: 992px){                 
-                margin: 0px;
+                margin-top: 0px;
                 margin-bottom: 50px;
+                margin-right: 30px;
+                margin-left: 30px;
                 span{  
                     display: block;                  
                     background-color: $color7;
                     padding: 10px;
                     border-radius: 10px;
-                    box-shadow: 0px 0px 10px 5px #000000;
+                    box-shadow: 0px 0px 10px 5px $backgrounColor2_element;
                 }
                 p.marker{
                     display: block;

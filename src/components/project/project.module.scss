@@ -8,34 +8,32 @@ $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
-$gradient: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);
-
 
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
 $fontColor_3: #d65b95 ;
 
+$backgroundColor1: #1c181c;
+$backgrounColor2_element: #110e11;
+$backgroundColor2: linear-gradient(#110e11 0%, #0b070b 100%);
+
+$borderColor1: #2b262b;
+
 .projects {
     padding: 10px 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    background-color: $backgrounColor2_element;
 
     @media (min-width: 992px){ 
         margin: 100px;
         padding: 40px;
         padding-left: 50px;
-        background:
-        linear-gradient(to right, $color3 20px, transparent 5px) 0 0,
-        linear-gradient(to right, $color3 20px, transparent 5px) 0 100%,
-        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 0,
-        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 100%,
-        linear-gradient(to bottom, $color3 20px, transparent 5px) 0 0px,
-        linear-gradient(to bottom, $color3 20px, transparent 5px) 100% 0,
-        linear-gradient(to top,$color3 20px, transparent 5px) 0 100%,
-        linear-gradient(to top, $color3 20px, transparent 5px) 100% 100%;
-        background-repeat: no-repeat;
-        background-size: 70px 70px;
+        background-color: $backgroundColor1;
+        border: 2px solid $borderColor1;
         border-radius: 10px;      
+        max-width: 1200px;
+        align-self: center;        
     }
 
     ul {
@@ -53,9 +51,10 @@ $fontColor_3: #d65b95 ;
             list-style: none;
 
             @media (min-width: 992px){
-                border: none;
+                border: 2px solid $color6;
+                box-shadow: 0px 0px 13px 5px $backgrounColor2_element;
                 width: 250px;
-                height: 400px;
+                height: 300px;
 
                 img.projectImg{
                     padding: 5px 0px;

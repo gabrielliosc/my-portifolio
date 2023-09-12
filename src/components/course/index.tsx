@@ -22,7 +22,7 @@ export default function Courses(){
     }]
 
     return (
-        <div id="course" className={style.courses}>
+        <section id="course" className={style.courses}>
             <h1>
                 <img src={codeIcon}></img>
                 <span>Cursos</span>
@@ -39,6 +39,6 @@ export default function Courses(){
                 </ul>
                 <Modal></Modal>
             </div>
-        </div>
+        </section>
     )
 }

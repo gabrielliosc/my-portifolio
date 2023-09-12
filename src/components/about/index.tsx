@@ -6,7 +6,7 @@ import codeIcon from '../../assets/img/code-solid.svg';
 
 export default function About() {
     return (
-        <div id="about" className={style.about}>
+        <section id="about" className={style.about}>
             <h1><img src={codeIcon}></img><span>Sobre mim</span><img src={codeIcon}></img></h1>
             <div className={style.content}>
                 <div className={style.row1}>
@@ -20,6 +20,6 @@ export default function About() {
                     <Contact></Contact>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
