@@ -1,23 +1,4 @@
-//Color Pallete
-$color1: #dd44c7 ;
-$color2: #c757ca;
-$color3: #c9186a ;
-$color3_op: #c9186bbb ;
-$color4: #030422;
-$color5: #291b4d;
-$color6: #321b4d;
-$color7: #6c528b;
-$color8: #9ba3f5;
-
-$fontColor: #3b3b3b;
-$fontColor_2: #eeebeb;
-$fontColor_3: #d65b95 ;
-
-$backgroundColor1: #1c181c;
-$backgrounColor2_element: #110e11;
-$backgroundColor2: linear-gradient(#110e11 0%, #0b070b 100%);
-
-$borderColor1: #2b262b;
+@import '../../assets/styles/reference.scss';
 
 .projects {
     padding: 10px 50px;
