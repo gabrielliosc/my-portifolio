@@ -1,7 +1,7 @@
 //Color Pallete
 $color1: #dd44c7 ;
 $color2: #c757ca;
-$color3: #f066a6 ;
+$color3: #c9186a ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
@@ -26,6 +26,7 @@ $fontColor_2: #eeebeb;
         @media (min-width: 992px){
             flex-direction: row;
             justify-content: flex-end;
+            padding-top: 0px;
         }
 
         li{
@@ -39,28 +40,41 @@ $fontColor_2: #eeebeb;
             
             @media (min-width: 992px){
                 border: 0px;
-                border-left: 4px solid $color1;
+                border-left: 4px solid $color3;
                 border-bottom-left-radius: 20px;
                 padding: 10px;
+                padding-right: 0px;
                 width: auto;
             }
-
-            a{
-                text-decoration: none;
-                color: $fontColor_2;
-                padding: 5px;           
-            }    
-                 
+            a{ 
+                display: block;         
+                color: $fontColor_2;   
+                width: 300px;  
+                
+                @media (min-width: 992px){
+                    width: auto;
+                }     
+            }             
         }
         li:hover{
+            border-top:transparent; 
+            border-left: transparent;
+            border-right: transparent; 
             background: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%); ;       
             cursor: pointer;
-            border: 0px;
-            
+                        
             @media (min-width: 992px){
-                background: linear-gradient(45deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);                 
+                background: linear-gradient(45deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);     
+                padding-right: 20px;            
             }
         }
     }
-
+    @media (min-width: 992px){
+        padding: 10px;
+        margin-right: 10px;  
+        margin-bottom: 50px; 
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
 }

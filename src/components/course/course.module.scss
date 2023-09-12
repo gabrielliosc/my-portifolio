@@ -1,7 +1,7 @@
 //Color Pallete
 $color1: #dd44c7 ;
 $color2: #c757ca;
-$color3: #f066a6 ;
+$color3: #c9186a ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
@@ -11,26 +11,100 @@ $color8: #9ba3f5;
 
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
+$fontColor_3: #6c528b;
+
+
 
 .courses {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+    img.certificate{
+        width:100%;
+        height: auto;
+    }
+    @media (min-width: 992px){ 
+        margin: 100px;
+        padding: 40px;
+        padding-left: 50px;
+        background:
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 0,
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 100%,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 0 0px,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to top,$color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to top, $color3 20px, transparent 5px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        border-radius: 10px;
+        
+        .content{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            h3{
+                font-size: 14px;                
+                color: $fontColor_3;
+            }
+            p{
+                font-size: 14px;                
+            }
+        
+            .modal{
+                padding: 15px;
+                padding-left: 30px;
+                margin: 15px;  
+                height: fit-content;
+                width: 70%;                
+                background: linear-gradient(135deg, $color4 0%,#753a88 15%, #cc2b5e 50%, #753a88 85%, $color4 100%);
+                opacity: 0.7;
+                box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+                font-size: 15px;
+
+                img.certificate{
+                    height: 400px;
+                    width: 600px;
+                }  
+            }   
+                
+        }
+    }
     ul {
+
         li{ 
             border: 1px dashed $color7;
             border-radius: 20px;
             box-shadow: 0px 2px 10px 4px $color6;
             padding: 10px;
             margin: 15px;         
-            list-style: none;            
+            list-style: none; 
+            
+            @media (min-width: 992px){ 
+                border: 2px solid $color6;
+                box-shadow: 0px 0px 0px 0px $color6; 
+            }   
+                          
+        }
+        @media (min-width: 992px){ 
+            width: 30%;
         }
     }
-   
     h1{ 
+        display: flex;
+        align-items: center;
         margin: 10px 0px;
-        width: 290px;
+        width: fit-content;
         text-align: center;
-        border-bottom: 1px solid $color3;
+        span{
+            margin: 10px;
+        }
+        margin-bottom: 40px;
     }
+    
 }

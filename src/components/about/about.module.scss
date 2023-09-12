@@ -1,47 +1,128 @@
 //Color Pallete
 $color1: #dd44c7 ;
 $color2: #c757ca;
-$color3: #f066a6 ;
+$color3: #c9186a ;
+$color3_op: #c9186bbb ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
+$gradient: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);
 
 
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
-
+$fontColor_3: #d65b95 ;
 
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $color4;
     padding: 10px 50px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    
 
+    @media (min-width: 992px){ 
+        margin: 100px;
+        padding: 40px;
+        padding-left: 50px;
+        background:
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 0,
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 100%,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 0 0px,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to top,$color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to top, $color3 20px, transparent 5px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        border-radius: 10px;
+        
+        .content{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: top;
+        }
+    }
+    h2{
+        font-weight: 300;
+        color: $fontColor_3;
+
+        @media(min-width: 992px){
+            font-size: 25px;
+            text-align: start;
+            width: 300px;
+        }
+    }
+    h3{
+        font-weight: 200;
+        color: $fontColor_3;
+        opacity: 0.7;
+
+        @media(min-width: 992px){
+            font-size: 15px;
+            text-align: start;
+            width: 300px;
+        }
+    }
     img.profile{        
         height: 200px;
         width: 200px;
-        border: 2px solid $color3;
-        border-radius: 50%;
-        //box-shadow: 10px 10px 0px 0px $color2;
+        margin-bottom: 20px;        
+        border-radius: 20%;
+        box-shadow: 0px 0px 10px 3px $color3;
+
+        @media(min-width: 992px){ 
+            width: 300px;
+            height: 300px;
+            border-radius: 0;
+            box-shadow: 10px 10px 0px 0px $color3_op;
+            
+        }  
     }
-    .column{
+    .row1{
         text-align: center;
         padding: 5px;
         margin: 10px;
+
+        @media(min-width: 992px){ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            margin: 0;
+                       
+        }
     }
-    h1{        
-        margin: 10px 0px;
-        width: 100%;
+    .row2{
         text-align: center;
-        border-bottom: 1px solid $color3;
+        padding: 5px;
+        margin: 10px;
+
+        @media(min-width: 992px){ 
+            width: 60%;
+            margin: 0;
+            p{
+                text-align: justify;
+            }
+                       
+        }
     }
+    h1{ 
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        width: fit-content;
+        text-align: center;
+        span{
+            margin: 10px;
+        }
+        margin-bottom: 40px;
 
-
-
+        @media (min-width: 992px){  
+            padding: 0px;
+        }
+    }
 }

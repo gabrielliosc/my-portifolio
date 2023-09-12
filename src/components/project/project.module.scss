@@ -1,23 +1,49 @@
 //Color Pallete
 $color1: #dd44c7 ;
 $color2: #c757ca;
-$color3: #f066a6 ;
+$color3: #c9186a ;
+$color3_op: #c9186bbb ;
 $color4: #030422;
 $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
+$gradient: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);
 
 
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
-
+$fontColor_3: #d65b95 ;
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media (min-width: 992px){ 
+        margin: 100px;
+        padding: 40px;
+        padding-left: 50px;
+        background:
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 0,
+        linear-gradient(to right, $color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to left,  $color3 20px, transparent 5px) 100% 100%,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 0 0px,
+        linear-gradient(to bottom, $color3 20px, transparent 5px) 100% 0,
+        linear-gradient(to top,$color3 20px, transparent 5px) 0 100%,
+        linear-gradient(to top, $color3 20px, transparent 5px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        border-radius: 10px;      
+    }
+
     ul {
+        @media (min-width: 992px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
         li{ 
             border: 1px dashed $color7;
             border-radius: 20px;
@@ -25,9 +51,25 @@ $fontColor_2: #eeebeb;
             padding: 10px;
             margin: 15px;         
             list-style: none;
+
+            @media (min-width: 992px){
+                border: none;
+                width: 250px;
+                height: 400px;
+
+                img.projectImg{
+                    padding: 5px 0px;
+                    width: 250px;
+                    height: 150px;
+                }
+            }
             p.languages{
                 display: flex;                
                 align-items: center;
+
+                @media (min-width: 992px){
+                    flex-wrap: wrap;
+                }
             }
         }
     }
@@ -37,9 +79,15 @@ $fontColor_2: #eeebeb;
         margin: 5px;
     }
     h1{ 
+        display: flex;
+        align-items: center;
         margin: 10px 0px;
-        width: 290px;
+        width: fit-content;
         text-align: center;
-        border-bottom: 1px solid $color3;
+
+        span{
+            margin: 10px;
+        }
+        margin-bottom: 40px;
     }
 }

@@ -11,6 +11,7 @@ import Contact from '../../components/contact';
 
 //Import style
 import style from "./App.module.scss";
+import Footer from '../../components/footer';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Experience />
       <Education />
       <Courses />
-      <Contact />
+      <Footer />
     </div>
   );
 }

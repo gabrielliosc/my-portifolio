@@ -1,33 +1,30 @@
 import style from './menu.module.scss';
-
+import { Link } from 'react-scroll';
 
 export default function Menu() {
-    const pages = [{
-        description: 'Sobre Mim',
-        route: './'
+    const sections = [{
+        name: 'Sobre Mim',
+        route: 'about'
     }, {
-        description: 'Projetos',
-        route: './'
+        name: 'Projetos',
+        route: 'project'
     }, {
-        description: 'Experiências',
-        route: './'
-    },{
-        description: 'Formação',
-        route: './'
-    },{
-        description: 'Certificados e Cursos',
-        route: './'
-    },{
-        description: 'Contato',
-        route: './'
+        name: 'Experiências',
+        route: 'experience'
+    }, {
+        name: 'Formação',
+        route: 'education'
+    }, {
+        name: 'Certificados e Cursos',
+        route: 'course'
     }]
 
     return (
-        <div className={style.nav}>
+        <div className={style.nav}>            
             <ul>
-                {pages.map((page, index) => (
+                {sections.map((section, index) => (                    
                     <li key={index}>
-                        <a href={page.route}>{page.description}</a>  
+                        <Link activeClass="active" className={section.route} to={section.route} spy={true} smooth={true} duration={500}>{section.name}</Link>
                     </li>
                 ))}
             </ul>

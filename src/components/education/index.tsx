@@ -1,10 +1,10 @@
-
 import style from './education.module.scss';
+import codeIcon from '../../assets/img/code-solid.svg';
 
 export default function Education() {
     const education = [
         {
-            period: '2020 -',
+            period: '2020',
             subject: 'Mestrado - Ciência da Computação',
             university: 'Universidade Federal Fluminense (UFF)'
         },
@@ -15,13 +15,20 @@ export default function Education() {
         }
     ]
     return (
-        <div className={style.education}>
-            <h1>Educação</h1>
+        <div id="education" className={style.education}>
+            <h1>
+                <img src={codeIcon}></img>
+                <span>Educação</span>
+                <img src={codeIcon}></img>
+            </h1>
             <ul> {education.map((educItem, index) => (
                 <li key={index}>
-                    <p>{educItem.period}</p>
-                    <h3>{educItem.subject}</h3>
-                    <h3>{educItem.university}</h3>
+                    <p className={style.marker}>    </p>
+                    <span>
+                        <p>{educItem.period}</p>
+                        <h4>{educItem.subject}</h4>
+                        <h5>{educItem.university}</h5>
+                    </span>
                 </li>
             ))}
             </ul>
