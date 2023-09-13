@@ -4,6 +4,10 @@ import codeIcon from '../../assets/img/code-solid.svg';
 
 export default function Courses(){
     const courses = [{
+        name: 'Acessibilidade web: crie designs inclusivos',
+        school: 'Alura',
+        certificate: ''
+    },{
         name: 'React - escrevendo com Typescript',
         school: 'Alura',
         certificate: ''
