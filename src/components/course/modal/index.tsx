@@ -6,7 +6,8 @@ export default function Modal(){
     return (
         <div className={style.modal}>
             <p>Certificado</p>            
-            <img className={style.certificate} src={certReact} alt="" />            
+            <img className={style.certificate} src={certReact} alt="Certificado" />    
+            <p>Seção em construção</p>        
         </div>
     )
 }

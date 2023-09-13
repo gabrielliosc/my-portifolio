@@ -30,11 +30,13 @@ export default function Project() {
                 <img src={codeIcon}></img>
                 <span>Projetos</span>
                 <img src={codeIcon}></img>
+                <p>Seção em construção</p>  
             </h1>
-            <ul>
+            <ul>                  
                 {projects.map(project => (
                     <li key={project.id}>
-                        <img className={style.projectImg} src={project.img_url} alt={'Imagem ' + project.name}></img>
+                        {//<img className={style.projectImg} src={project.img_url} alt={'Imagem ' + project.name}></img>
+                        }
                         <p>Título: {project.name} <a href={project.html_url} target="_blank" rel="noreferrer"><img src={arrowIcon} alt="" /></a></p>
                         <p>Descrição: {project.description}</p>
                         <p className={style.languages}><span>Linguages utilizadas:</span><Languages url={project.languages_url} id={project.id}></Languages>   </p>                 

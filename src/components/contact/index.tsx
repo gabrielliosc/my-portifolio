@@ -2,7 +2,6 @@ import style from './contact.module.scss';
 
 export default function Contact(){
     return (
-    //<footer id="contact" className={style.contact}> <h3>Contato</h3>
     <div id="contact" className={style.contact}>
         <ul>
             <li>
@@ -11,16 +10,14 @@ export default function Contact(){
                 </a>
             </li>
             <li>
-                <a className={style.github} href="https://github.com/gabrielliosc">
+                <a className={style.github} target="_blank" href="https://github.com/gabrielliosc">
                 </a>
             </li>
             <li>
-                <a className={style.linkedin} href="https://linkedin.com/gabrielli-oliveira-cruz">
+                <a className={style.linkedin} target="_blank" href="https://www.linkedin.com/in/gabrielli-oliveira-cruz/">
                 </a>
             </li>
         </ul>
     </div>
-       //<span><i>Última atualização: 11/09/2023</i></span>
-    //</footer>
     )
 }
