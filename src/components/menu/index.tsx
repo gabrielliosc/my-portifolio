@@ -1,5 +1,6 @@
 import style from './menu.module.scss';
 import { Link } from 'react-scroll';
+import logo from '../../assets/img/logo_gabrielli.png'
 
 export default function Menu() {
     const sections = [{
@@ -20,7 +21,8 @@ export default function Menu() {
     }]
 
     return (
-        <div className={style.nav}>            
+        <div className={style.nav}>   
+            {/* <img src={logo} alt=''/> */}
             <ul>
                 {sections.map((section, index) => (                    
                     <li key={index}>

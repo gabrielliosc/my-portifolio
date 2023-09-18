@@ -6,13 +6,13 @@ import codeIcon from '../../assets/img/code-solid.svg';
 
 export default function Experience(){
     const experiences = [{
-        title: 'Secretária Municipal de Assistência Social - RJ',
+        title: 'Secretaria Municipal de Assistência Social - RJ',
         id: 1,
         role: 'Analista de Geoprocessamento Pleno (jan/21 - abril/23)',
         description: 'Desenvolvimento de soluções inteligentes no ArcGIS Online (webmaps, webapps, dashbords, sites), ArcMap, ArcGIS Pro; Elaboração de formulários e coleta de dados através do Survey123; Elaboração de diagnóstico e análise de dados com Excel; Elaboração de sites no ArcGIS Experience Builder e ArcGis Hub',
         
     },{
-        title: 'Secretária Municipal de Assistência Social - RJ',
+        title: 'Secretaria Municipal de Assistência Social - RJ',
         id: 2,
         role: 'Analista de Geoprocessamento Júnior (jul/20 - dez/20)',
         description: 'Desenvolvimento de soluções inteligentes no ArcGIS Online (webmaps, webapps, dashbords, sites), ArcMap, ArcGIS Pro Elaboração de formulários e coleta de dados através do Survey123 ',
@@ -37,7 +37,6 @@ export default function Experience(){
 
     function experienceProjects(id: number){
         const projs = projects.filter((project) => {return project.expid === id});
-        console.log(projs)
         let project = '';
 
         for (let i=0; i<projs.length; i++){

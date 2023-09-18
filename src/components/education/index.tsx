@@ -4,7 +4,12 @@ import codeIcon from '../../assets/img/code-solid.svg';
 export default function Education() {
     const education = [
         {
-            period: '2020',
+            period: '2023 - Cursando',
+            subject: 'Pós-Graduação - Engenharia de Software',
+            university: 'PUC-Rio'
+        },
+        {
+            period: '2020 - 2022 (Pausado)',
             subject: 'Mestrado - Ciência da Computação',
             university: 'Universidade Federal Fluminense (UFF)'
         },
