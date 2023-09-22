@@ -20,7 +20,7 @@ export default function Education() {
         }
     ]
     return (
-        <div id="education" className={style.education}>
+        <section id="education" className={style.education}>
             <h1>
                 <img src={codeIcon}></img>
                 <span>Educação</span>
@@ -37,6 +37,6 @@ export default function Education() {
                 </li>
             ))}
             </ul>
-        </div>
+        </section>
     )
 }

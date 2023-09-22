@@ -48,7 +48,7 @@ export default function Experience(){
 
     
     return(
-        <div id="experience" className={style.experiences}>
+        <section id="experience" className={style.experiences}>
             <h1><img src={codeIcon}></img><span>Experiências</span><img src={codeIcon}></img></h1>
             <ul>
             {experiences.map((experience) => (
@@ -61,7 +61,7 @@ export default function Experience(){
                 </li>
             ))}
             </ul>
-        </div>
+        </section>
         
     )
 }

@@ -15,34 +15,36 @@ export default function Project() {
 
             const responseProj = await fetch('https://api.github.com/users/gabrielliosc/repos');
             const repos = await responseProj.json();
-            const publicProjects = await repos.filter((obj: any) => { return obj.visibility === "public" }) //Get only public repositories
 
-            setProjects(publicProjects);
+            const visibleProjects = await repos.filter((obj: any) => { return obj.topics.includes('visible') }) //Get only repositories that has the visible tag
 
-            }
+            setProjects(visibleProjects);
 
-            getProjects();
-        }, []);
+        }
+
+        getProjects();
+    }, []);
+
+
 
     return (
-        <div id="project" className={style.projects}>
+        <section id="project" className={style.projects}>
             <h1>
                 <img src={codeIcon}></img>
                 <span>Projetos</span>
                 <img src={codeIcon}></img>
-                <p>Seção em construção</p>  
             </h1>
-            <ul>                  
+            <ul>
                 {projects.map(project => (
                     <li key={project.id}>
                         {//<img className={style.projectImg} src={project.img_url} alt={'Imagem ' + project.name}></img>
                         }
                         <p>Título: {project.name} <a href={project.html_url} target="_blank" rel="noreferrer"><img src={arrowIcon} alt="" /></a></p>
                         <p>Descrição: {project.description}</p>
-                        <p className={style.languages}><span>Linguages utilizadas:</span><Languages url={project.languages_url} id={project.id}></Languages>   </p>                 
+                        <p className={style.languages}><span>Linguages utilizadas:</span><Languages language={project.topics} ></Languages></p>
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     )
 }

@@ -43,13 +43,13 @@
                     height: 150px;
                 }
             }
+            p{
+                padding: 5px 0px;
+            }
             p.languages{
                 display: flex;                
                 align-items: center;
-
-                @media (min-width: 992px){
-                    flex-wrap: wrap;
-                }
+                flex-wrap: wrap;
             }
         }
     }
@@ -57,6 +57,7 @@
         width: 30px;
         height: 30px;
         margin: 5px;
+        border-radius: 5px;
     }
     h1{ 
         display: flex;
@@ -64,10 +65,6 @@
         margin: 10px 0px;
         width: fit-content;
         text-align: center;
-        p{  
-            padding-left: 50px;
-            font-size: 14px;
-        }
         span{
             margin: 10px;
         }

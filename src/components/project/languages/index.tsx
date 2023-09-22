@@ -1,95 +1,73 @@
 import React, { useEffect, useState } from "react";
-import jsIcon from '../../../assets/img/JavaScript.png';
+import jsIcon from '../../../assets/img/JavaScript.jpg';
 import CSSIcon from '../../../assets/img/CSS.png';
 import HTMLIcon from '../../../assets/img/HTML.png';
 import tsIcon from '../../../assets/img/TypeScript.png';
+import reactIcon from '../../../assets/img/reactjs.png'
 import SCSSIcon from '../../../assets/img/SCSS.png';
 import style from "../project.module.scss";
 
+
 interface Props {
-    url: string
-    id: number
+    'id': number,
+    'language': Array<string>
 }
-export default function Languages({url, id}: Props) {
 
+export default function Languages({language}: {language: Array<string>}) {
 
-    const [languages, setLanguages] = useState<any>([]);  //Create variable languages to get languages used on each repositories project from github API and method setLanguages to set the result to the variable
-
-    const [properties, setProperties] = useState<any>([]); //Create variable properties to get all propertie and method setProperties to set the result to the variable
-
+    const [languages, setLanguages] = useState<string[]>([]); //Create variable projects to get repositories projects from github API and method setProjects to set the result to the variable
 
     useEffect(() => {
 
-        async function getLanguages() {
-
-            //For each project get the correspondent languages used
+        function filteredLang() {
             
-            const responseLang = await fetch(url);
-            
+            let filtrado = language.filter(removeValue)
 
-            const lang = await responseLang.json();
-
-            
-
-            if (lang.length !== 0){
-
-                const projectLang = {
-                    'id': id,
-                    'languages': await lang
-                }
-
-                const properties = Object.getOwnPropertyNames(projectLang.languages);
-
-                setLanguages(projectLang.languages);
-                setProperties(properties);
-
-            } else {
-
-                const projectLang = {
-                    'id': id,
-                    'languages': ''
-                }
-                const properties = Object.getOwnPropertyNames(projectLang.languages);
-
-                setLanguages(projectLang.languages);
-                setProperties(properties);
-
-            }        
-        
-    }
-
-        getLanguages();
-
-    }, [url,id]);
-
-    
-    function languageIcon(language: string) {
-
-        switch (language) {
-            case 'JavaScript':
-                return jsIcon;
-            case 'CSS':
-                return CSSIcon;
-            case 'SCSS':
-                return SCSSIcon;
-            case 'TypeScript':
-                return tsIcon;
-            case 'HTML':
-                return HTMLIcon;
-            default:
-                return '';
+            setLanguages(filtrado)
         }
-    }
 
-    return (
+        filteredLang();
+    }, [language]);
 
-        <>
-            {properties.map((property: string,index: any) => 
-                        (<img className={style.icon} key={index}
-                        src={languageIcon(property)} 
-                        alt={property}></img>
-                        ))}
+    function removeValue(value:string, index:number, topics: Array<string>) {
+            // If the value at the current array index matches the specified value (visible)
+            if (value === 'visible') {
+                // Removes the value from the original array
+                topics.splice(index, 1);
+                return false;
+                }
+            return true;
+        }
+        
 
-        </>
-    )
+        function languageIcon(lang: string) {
+
+            switch (lang) {
+                case 'reactjs':
+                    return reactIcon;
+                case 'javascript':
+                    return jsIcon;
+                case 'css':
+                    return CSSIcon;
+                case 'sass':
+                    return SCSSIcon;
+                case 'typescript':
+                    return tsIcon;
+                case 'html':
+                    return HTMLIcon;
+                default:
+                    return '';
+            }
+        }
+    
+        return (
+    
+            <>                
+                {languages.map((language: string,index: any) => 
+                (<img className={style.icon} key={index}
+                src={languageIcon(language)} 
+                alt={language}></img>
+                ))} 
+            </>
+        ) 
 }

@@ -1,17 +1,22 @@
 @import '../../assets/styles/reference.scss';
 
-
-  
 .nav{
     background-color: $backgrounColor2_element;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media (min-width: 992px){
         background-color: transparent;
-        display: grid;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    /*img {
-        width: 100px;
-        height: 100px;
-    }*/
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+    }
+
     ul {
         display: flex;
         flex-direction: column;

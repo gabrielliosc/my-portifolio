@@ -22,7 +22,7 @@ export default function Menu() {
 
     return (
         <div className={style.nav}>   
-            {/* <img src={logo} alt=''/> */}
+            <img src={logo} alt=''/>
             <ul>
                 {sections.map((section, index) => (                    
                     <li key={index}>
