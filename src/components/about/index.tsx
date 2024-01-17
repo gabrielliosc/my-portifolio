@@ -16,7 +16,7 @@ export default function About() {
                 </div>
                 <div className={style.row2}>
                     <p>Engenheira Cartógrafa pela UERJ, tenho interesse na área de tecnologia em especial na área de desenvolvimento web.</p>
-                    <p>Durante minha graduação desenvolvi interesse pela computação ao realizar disciplinas relacionadas ao tema. Após me formar continuei o estudo nessa área e apliquei em algumas experiências de trabalho os meus conhecimentos. Mantendo este interesse, ingressei no mestrado de Ciência da Computação na UFF, na área de visualização de dados, onde decidi pela transição de carreira para a área de front-end.</p>
+                    <p>Durante minha graduação desenvolvi interesse pela computação ao realizar disciplinas relacionadas ao tema. Após me formar continuei o estudo nessa área e apliquei em algumas experiências de trabalho os meus conhecimentos. Mantendo este interesse, optei por realizar uma transição de carreira para a área de frontend, ingressei na Pós-graduação de Engenharia de software da PUC-Rio para aprofundar mais meus estudos.</p>
                     <Contact></Contact>
                 </div>
             </div>
