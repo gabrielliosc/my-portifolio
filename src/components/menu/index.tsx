@@ -18,6 +18,9 @@ export default function Menu() {
     }, {
         name: 'Certificados e Cursos',
         route: 'course'
+    }, {
+        name: 'Artigos',
+        route: 'articles'
     }]
 
     return (
