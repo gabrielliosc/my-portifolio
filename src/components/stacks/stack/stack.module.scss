@@ -1,0 +1,52 @@
+@import '../../../assets/styles/reference.scss';
+
+.stack { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    // border: 3px solid #353434;
+    background-color: rgba(48, 40, 48, 0.6);
+    width: 210px;
+    padding: 5px;
+    border-radius: 5px;
+
+    img.icon{
+        height: 30px;
+        width: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .white {
+        background-color: rgba(214, 214, 214, 0.3);
+    }
+    .black {
+        background-color: rgba(2, 2, 2, 0.3);
+    }
+    .blue {
+        background-color: rgba(3, 78, 240, 0.3);
+    }
+    .green {
+        background-color: rgba(3, 240, 15, 0.3);
+    }
+    .purple {
+        background-color: rgba(114, 3, 240, 0.3);
+    }
+    .yellow {
+        background-color: rgba(207, 177, 5, 0.3);
+    }
+    .orange {
+        background-color: rgba(192, 117, 5, 0.3);
+    }
+    .red {
+        background-color: rgba(192, 11, 5, 0.3);
+    }
+    .pink {
+        background-color: rgba(240, 3, 181, 0.3);
+    }
+    .ligthpink {
+        background-color: rgb(222, 115, 151, 0.3);
+    }
+}
+
+

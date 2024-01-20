@@ -7,6 +7,7 @@ import Experience from '../../components/experience';
 import About from '../../components/about';
 import Education from '../../components/education';
 import Courses from '../../components/course';
+import Stacks from '../../components/stacks';
 import Contact from '../../components/contact';
 
 //Import style
@@ -25,6 +26,7 @@ function App() {
       <Education />
       <Courses />
       <Articles />
+      <Stacks />
       <Footer />
     </div>
   );
