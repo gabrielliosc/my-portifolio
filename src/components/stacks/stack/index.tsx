@@ -4,6 +4,7 @@ import HTMLIcon from '../../../assets/img/HTML.png';
 import jsIcon from '../../../assets/img/JavaScript.png';
 import tsIcon from '../../../assets/img/TypeScript.png';
 import reactIcon from '../../../assets/img/react.svg';
+import reactrouterIcon from '../../../assets/img/react-router.svg';
 import SCSSIcon from '../../../assets/img/scss.svg';
 import styledIcon from '../../../assets/img/styled_components.png';
 import bootstrapIcon from '../../../assets/img/bootstrap.png';
@@ -49,6 +50,9 @@ export default function Stack({stack}: {stack: string}) {
         switch (lang) {
             case 'reactjs':
                 return reactIcon;
+                break
+            case 'reactRouter':
+                return reactrouterIcon;
                 break
             case 'javascript':
                 return jsIcon;
@@ -149,6 +153,7 @@ export default function Stack({stack}: {stack: string}) {
                 return `${style.icon} + ${style.ligthpink}`;
                 break
             case 'angular':
+            case 'reactRouter':
                 return `${style.icon} + ${style.red}`;
                 break
             case 'bootstrap':
