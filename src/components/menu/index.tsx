@@ -1,6 +1,8 @@
 import style from './menu.module.scss';
+import logo from '../../assets/img/logo_gabrielli.png';
+
 import { Link } from 'react-scroll';
-import logo from '../../assets/img/logo_gabrielli.png'
+import {v4 as uuidv4} from 'uuid'
 
 export default function Menu() {
     const sections = [{
@@ -16,7 +18,7 @@ export default function Menu() {
         name: 'Formação',
         route: 'education'
     }, {
-        name: 'Certificados e Cursos',
+        name: 'Cursos',
         route: 'course'
     }, {
         name: 'Artigos',
@@ -30,8 +32,8 @@ export default function Menu() {
         <div className={style.nav}>   
             <img src={logo} alt=''/>
             <ul>
-                {sections.map((section, index) => (                    
-                    <li key={index}>
+                {sections.map((section) => (                    
+                    <li key={uuidv4()}>
                         <Link activeClass="active" className={section.route} to={section.route} spy={true} smooth={true} duration={500}>{section.name}</Link>
                     </li>
                 ))}
