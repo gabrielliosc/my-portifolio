@@ -21,6 +21,9 @@ export default function Menu() {
     }, {
         name: 'Artigos',
         route: 'articles'
+    }, {
+        name: 'Tecnologias',
+        route: 'stacks'
     }]
 
     return (
