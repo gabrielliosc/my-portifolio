@@ -21,7 +21,9 @@
         @media (min-width: 992px){
             display: flex;
             flex-wrap: wrap;
-            justify-content:space-between;
+            margin: 0 auto;
+            justify-content: space-around;
+            gap: 20px;
         }
         li{ 
             border: 1px dashed $color7;
@@ -32,15 +34,20 @@
             list-style: none;
 
             @media (min-width: 992px){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
                 border: 2px solid $color6;
                 box-shadow: 0px 0px 13px 5px $backgrounColor2_element;
                 width: 250px;
-                height: 300px;
+                min-height: 300px;
 
                 img.projectImg{
                     padding: 5px 0px;
                     width: 250px;
                     height: 150px;
+                    cursor: url('../../assets/img/cursor_zoom.svg'), auto;
                 }
             }
             p{
@@ -49,14 +56,35 @@
             p.languages{
                 display: flex;                
                 align-items: center;
+                gap: 10px;
                 flex-wrap: wrap;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            a.demo, a.repository {
+                text-decoration: none;
+                color: $fontColor_3;
+            }
+            a.demo{
+                border-right: 1px solid;
+                padding-right: 5px;
+            }
+            a.repository{
+                padding-left: 5px;
+            }
+            a.none {
+                display: none;
             }
         }
     }
-    img.icon {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
+    span.icon {
+        width: auto;
+        font-size: 14px;
+        background-color: $color6;
+        padding: 0px 5px;
         border-radius: 5px;
     }
     h1{ 
@@ -71,3 +99,29 @@
         margin-bottom: 40px;
     }
 }
+
+//Configuração do modal
+.modal {
+    position: fixed;
+    z-index: 1300;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.9);
+
+    .modal__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img.zoom { 
+            transition-duration: .5s;
+            transform: scale(.6);
+            border: 2px solid $fontColor_3;
+            cursor: url('../../assets/img/cursor_zoom_out.svg'), auto;
+        }
+    }
+}
+
