@@ -11,12 +11,8 @@
     background-color: $backgrounColor2_element;
 
     @media (min-width: 992px){ 
-        margin: 100px;
-        padding: 40px 50px;
         border-radius: 10px;
         background-color: $backgroundColor1;
-        border: 2px solid $borderColor1;
-        max-width: 1200px;
         align-self: center;
     }
     ul {
@@ -25,7 +21,6 @@
             flex-direction: row-reverse;
             justify-content: space-around;
             width: auto;
-            margin-top: 50px;
             border-top: 1px solid $color8;
             padding: 0px 30px;
         }
@@ -82,6 +77,5 @@
         span{
             margin: 10px;
         }
-        //border-bottom: 1px solid $color3;
     }
 }

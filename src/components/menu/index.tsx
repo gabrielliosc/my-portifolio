@@ -15,9 +15,6 @@ export default function Menu() {
         name: 'Experiências',
         route: 'experience'
     }, {
-        name: 'Formação',
-        route: 'education'
-    }, {
         name: 'Cursos',
         route: 'course'
     }, {

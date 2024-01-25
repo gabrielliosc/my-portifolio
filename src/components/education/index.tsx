@@ -1,7 +1,6 @@
 import style from './education.module.scss';
-import codeIcon from '../../assets/img/code-solid.svg';
 
-export default function Education() {
+export default function Education({className}: {className?: string} ) {
     const education = [
         {
             period: '2023 - Cursando',
@@ -19,13 +18,9 @@ export default function Education() {
             university: 'Universidade do Estado do Rio de Janeiro (UERJ)'
         }
     ]
+
     return (
-        <section id="education" className={style.education}>
-            <h1>
-                <img src={codeIcon}></img>
-                <span>Educação</span>
-                <img src={codeIcon}></img>
-            </h1>
+        <section id="education" className={className? className : style.education}>
             <ul> {education.map((educItem, index) => (
                 <li key={index}>
                     <p className={style.marker}>    </p>
