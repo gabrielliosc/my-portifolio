@@ -3,6 +3,7 @@
 
 .contact {    
     padding: 10px 0px;    
+    margin-top: 15px;
     ul {
         display: flex;
         flex-direction: row;
@@ -42,7 +43,7 @@
                 .tooltiptext{
                     font-size: 10px;
                     visibility: hidden;
-                    width: 120px;
+                    width: 150px;
                     background-color: rgb(53, 53, 53);
                     text-align: center;
                     border: 1px solid $color6;
@@ -62,6 +63,17 @@
             } 
             a.linkedin{        
                 background-image: url('../../assets/img/linkedin.svg');
+            }   
+            a.cv{
+                display: flex;
+                align-items: center;        
+                width: auto;
+                font-size: 14px;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
             }   
             a:hover{
                 border: 3px solid $color7;
