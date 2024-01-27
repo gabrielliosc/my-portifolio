@@ -25,9 +25,10 @@ import nodejsIcon from '../../../assets/img/nodejs.svg';
 import gitIcon from '../../../assets/img/git.svg';
 import githubIcon from '../../../assets/img/github.svg';
 
-//Icones swagger
+//Icones documentação e gerenciamento
 import swaggerIcon from '../../../assets/img/swagger.svg';
 import openapiIcon from '../../../assets/img/openapi.svg';
+import trelloIcon from '../../../assets/img/trello.svg';
 
 //Icones do banco de dados
 import sqlLiteIcon from '../../../assets/img/sqlite.svg';
@@ -111,6 +112,9 @@ export default function Stack({stack}: {stack: string}) {
             case 'openapi':
                 return openapiIcon;
                 break
+            case 'trello':
+                return trelloIcon;
+                break
             case 'sqlite':
                 return sqlLiteIcon;
                 break
@@ -165,6 +169,7 @@ export default function Stack({stack}: {stack: string}) {
                 break
             case 'neo4j':
             case 'mysql':
+            case 'trello':
                 return `${style.icon} + ${style.black}`;
                 break
             case 'vite':

@@ -12,7 +12,7 @@ import VersionControl from './version-control';
 
 export default function Stacks() {
     return(
-        <div className={style.container} id="stacks">
+        <section className={style.container} id="stacks">
             <h1>
                 <img src={codeIcon}></img>
                 <span>Tecnologias</span>
@@ -25,6 +25,6 @@ export default function Stacks() {
             <Documentation />
             <Database />
             <DataScience />
-        </div>
+        </section>
     )
 }

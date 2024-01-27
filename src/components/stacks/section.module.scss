@@ -5,15 +5,15 @@
     margin: 5px 0px;
 
     h2{
-        font-weight: regular;
+        font-weight: 400;
+        font-size: 20px;
     }
-    
     .section {
         margin-top: 20px;
         padding: 10px;
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        gap: 10px;
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 20px;
     }
 }
 
@@ -32,8 +32,7 @@
         background-color: $backgroundColor1;
         border: 2px solid $borderColor1;
         border-radius: 10px;
-        min-width: 1000px;
-        max-width: 1200px;
+        width: 1150px;
         align-self: center;
     }
 
