@@ -11,7 +11,7 @@ export default function ModalBase({id, image}:{id: string, image: string}){
 
     return (
         <div>
-            <button type="button" onClick={handleOpen}>
+            <button type="button" onClick={handleOpen} className={style.buttonProject}>
                 <img src={image} alt="" key={id} className={style.projectImg}/>
             </button>
             <Modal aria-labelledby="unstyled-modal-title"       aria-describedby="unstyled-modal-description"

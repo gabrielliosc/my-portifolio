@@ -3,10 +3,17 @@ import ModalBase from "./modal";
 
 import style from "./project.module.scss";
 import codeIcon from '../../assets/img/code-solid.svg';
+import githubIcon from '../../assets/img/github-icon.svg';
+import demoIcon from '../../assets/img/demo.png';
 
+//Imagens dos projetos realizados
 import dailyPlanner from '../../assets/img/daily_planner.png';
 import newsletter from '../../assets/img/newsletter.png';
 import landingPage from '../../assets/img/landing_page.png';
+import peg from '../../assets/img/peg.png';
+import artist from '../../assets/img/artista.png';
+import ladyRepair from '../../assets/img/ladyrepair.png';
+import ladyRepairApi from '../../assets/img/ladyrepair_api.png';
 
 import { v4 as uuidv4 } from "uuid"; //Gerador de uuid
 
@@ -17,7 +24,7 @@ export default function Project() {
         "name": 'Daily Planner',
         "demo": 'https://gabrielliosc.github.io/daily-planner/',
         "repository": 'https://github.com/gabrielliosc/daily-planner',
-        "description": 'Projeto Front-end replicando um bloco de papel com layout de daily planner',
+        "description": 'Projeto replicando um layout de daily planner',
         "stack": ['CSS', 'HTML', 'JavaScript'],
         "imagem": dailyPlanner
     },{
@@ -26,48 +33,48 @@ export default function Project() {
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/desafio-40',
         "description": 'Desafio 40 do #boraCodar da Rocketseat',
-        "stack": ['CSS', 'HTML'],
+        "stack": ['CSS', 'HTML', 'Figma'],
         "imagem": newsletter
     },{
         "id": uuidv4(),
         "name": 'Plataforma educacional gameficada - PEG',
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/hack-for-change',
-        "description": 'Projeto para o Hackhaton Hack for Change',
+        "description": 'Plataforma desenvolvida para o Hack for Change',
         "stack": ['CSS', 'HTML', 'React.js'],
-        "imagem": newsletter
+        "imagem": peg
     },{
         "id": uuidv4(),
         "name": 'Portfólio de uma artista',
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/portifolio-app',
-        "description": 'Esse é um projeto de front-end para um portifólio da artista Naju',
-        "stack": ['CSS','SASS','HTML', 'React.js'],
-        "imagem": newsletter
+        "description": 'Um portfólio desenvolvido para a artista Naju',
+        "stack": ['CSS','SASS','HTML', 'TypeScript', 'React.js'],
+        "imagem": artist
     },{
         "id": uuidv4(),
         "name": 'Landing page',
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/projetos-comunidade',
-        "description": 'Esse é um projeto de front-end de uma landing page feita em conjunto na comunidade de mulheres na tecnologia',
-        "stack": ['CSS','HTML'],
+        "description": 'Landing page feita em conjunto na comunidade de mulheres e tecnologia',
+        "stack": ['CSS','HTML','Figma'],
         "imagem": landingPage
     },{
         "id": uuidv4(),
         "name": 'LadyRepair',
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/mvp1-front-end',
-        "description": 'Site de divulgação de serviços realizados por mulheres, MVP para a pós-graduação de Engenharia de Software. Front-end da aplicação.',
+        "description": 'Site de divulgação de serviços realizados por mulheres, MVP para a pós-graduação de Engenharia de Software.',
         "stack": ['CSS','HTML','JavaScript'],
-        "imagem": landingPage
+        "imagem": ladyRepair
     },{
         "id": uuidv4(),
         "name": 'API do LadyRepair',
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/mvp1-back-end',
-        "description": 'API criada para cadastro de serviços realizados por mulheres, MVP para a pós-graduação de Engenharia de Software. Back-end da aplicação.',
+        "description": 'Criada para cadastro de serviços realizados por mulheres, MVP para a pós-graduação de Engenharia de Software.',
         "stack": ['Python','Flask','Swagger'],
-        "imagem": landingPage
+        "imagem": ladyRepairApi
     }]
 
 
@@ -87,9 +94,9 @@ export default function Project() {
                         <p className={style.languages}><span>Stacks:</span>
                             <Languages languages={project.stack} />
                         </p>
-                        <p>
-                            <a href={project.demo} target="_blank" rel="noreferrer" className={project.demo ? style.demo : style.none}> Demo</a>
-                            <a href={project.repository} target="_blank" rel="noreferrer" className={style.repository} >Repositório</a>
+                        <p className={style.links}>
+                            <a href={project.demo} target="_blank" rel="noreferrer" className={project.demo ? style.demo : style.none}><img src={demoIcon} alt="" />Demo</a>
+                            <a href={project.repository} target="_blank" rel="noreferrer" className={style.repository} ><img src={githubIcon} alt="" />Repositório</a>
                         </p>
                     </li>
                 ))}

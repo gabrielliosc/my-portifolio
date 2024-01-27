@@ -13,16 +13,15 @@
         background-color: $backgroundColor1;
         border: 2px solid $borderColor1;
         border-radius: 10px;      
-        max-width: 1200px;
+        width: 1150px;
         align-self: center;        
     }
 
     ul {
         @media (min-width: 992px){
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
             margin: 0 auto;
-            justify-content: space-around;
             gap: 20px;
         }
         li{ 
@@ -37,17 +36,27 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                justify-content: space-evenly;
+                justify-content: flex-start;
                 border: 2px solid $color6;
                 box-shadow: 0px 0px 13px 5px $backgrounColor2_element;
-                width: 250px;
+                width: 270px;
                 min-height: 300px;
 
-                img.projectImg{
-                    padding: 5px 0px;
-                    width: 250px;
-                    height: 150px;
-                    cursor: url('../../assets/img/cursor_zoom.svg'), auto;
+                button.buttonProject {
+                    background-color: transparent;
+                    border: none;
+
+                    img.projectImg{                        
+                        transition: all 200ms ease-out;
+                        width: 250px;
+                        height: 150px;
+                        cursor: url('../../assets/img/cursor_zoom.svg'), auto;
+                        
+
+                        &:hover {
+                            transform: rotate(5deg);
+                        }
+                    }
                 }
             }
             p{
@@ -63,21 +72,41 @@
                 font-size: 18px;
                 font-weight: 600;
             }
+            .links {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 10px;
+                
+                &:has(a.demo){
+                    justify-content: space-around;
+                }
+                a.repository, a.demo{
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: $fontColor_2;
+                    padding: 5px;
+                    background-color: $borderColor1;
+                    border-radius: 5px;
 
-            a.demo, a.repository {
-                text-decoration: none;
-                color: $fontColor_3;
+                    img {
+                        width: auto;
+                        height: 25px;
+                        padding-right: 5px;
+                    }
+
+                    &:hover{
+                        background-color: $color4;
+                    }
+                }
+                a.none {
+                    display: none;
+                }
             }
-            a.demo{
-                border-right: 1px solid;
-                padding-right: 5px;
-            }
-            a.repository{
-                padding-left: 5px;
-            }
-            a.none {
-                display: none;
-            }
+            
         }
     }
     span.icon {
