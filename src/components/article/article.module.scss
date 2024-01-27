@@ -13,7 +13,7 @@
         border-radius: 10px;
         background-color: $backgroundColor1;
         border: 3px solid $borderColor1;
-        max-width: 1200px;
+        width: 1150px;
         align-self: center;
         .content{
             display: flex;
@@ -23,9 +23,9 @@
     }
     ul {
         @media (min-width: 992px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:space-between;
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            gap: 20px;
         }
         li{ 
             border: 1px dashed $color7;
@@ -41,14 +41,18 @@
             }
 
             @media (min-width: 992px){
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: space-between;
                 border: 2px solid $color6;
                 box-shadow: 0px 0px 13px 5px $backgrounColor2_element;
-                width: 250px;
-                height: 300px;
+                width: auto;
+                height: auto;
 
                 img.articleImg{
                     padding: 5px 0px;
-                    width: 250px;
+                    width: auto;
                     height: 150px;
                 }
             }
