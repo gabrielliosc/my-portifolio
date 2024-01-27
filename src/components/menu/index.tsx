@@ -11,18 +11,21 @@ export default function Menu() {
     }, {
         name: 'Projetos',
         route: 'project'
-    }, {
-        name: 'Experiências',
-        route: 'experience'
-    }, {
-        name: 'Cursos',
-        route: 'course'
-    }, {
-        name: 'Artigos',
-        route: 'articles'
-    }, {
+    },{
         name: 'Tecnologias',
         route: 'stacks'
+    },{
+        name: 'Experiências',
+        route: 'experience'
+    },{
+        name: 'Cursos',
+        route: 'course'
+    },{
+        name: 'Artigos',
+        route: 'articles'
+    },{
+        name: 'Contato',
+        route: 'cta'
     }]
 
     return (
