@@ -13,8 +13,6 @@ export default function About() {
 
     const [education, setEducation] = useState(false)
 
-    const myAppRef = document.getElementById('dev')
-
     return (
         <section id="about" className={style.about}>
             <h1><img src={codeIcon}></img><span>Sobre mim</span><img src={codeIcon}></img></h1>
@@ -23,9 +21,10 @@ export default function About() {
                     <img id="profile" className={style.profile} src={profile} alt="Mulher branca com cabelo magenta"></img>
                 </div>
                 <div className={style.row2}>
-                <ReactTyped className={style.dev} strings={["> Desenvolvedora Frontend"]} typeSpeed={50} />
+                <ReactTyped className={style.dev} strings={["> Desenvolvedora Frontend"]} typeSpeed={50} startWhenVisible={true} />
                     <h3>Gabrielli de Oliveira</h3>
-                    <p>Engenheira em transição de carreira, apaixonada por desenvolvimento web e empoderamento de mulheres, dedicada à continua evolução cursando pós-graduação em Engenharia de Software.<button className={style.buttonAll} onClick={() => setEducation(!education)}> {education? 'Fechar formação' : 'Ver formação completa'}</button></p> 
+                    <p>Engenheira em transição de carreira, apaixonada por desenvolvimento web e empoderamento de mulheres. Motivada pelo aprendizado constante estou aprofundado meus conhecimentos por meio da pós-graduação em Engenharia de Software.</p>
+                    <p><button className={style.buttonAll} onClick={() => setEducation(!education)}> {education? 'Fechar formação' : 'Ver formação completa'}</button></p> 
                     <Contact></Contact>
                 </div>
             </div>
