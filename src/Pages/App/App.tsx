@@ -5,10 +5,10 @@ import Project from '../../components/project';
 import Menu from '../../components/menu';
 import Experience from '../../components/experience';
 import About from '../../components/about';
-import Education from '../../components/education';
+import CallToAction from '../../components/callToAction';
 import Courses from '../../components/course';
 import Stacks from '../../components/stacks';
-import Contact from '../../components/contact';
+
 
 //Import style
 import style from "./App.module.scss";
@@ -22,10 +22,11 @@ function App() {
       <Menu />
       <About />
       <Project />
+      <Stacks />
       <Experience />
       <Courses />
       <Articles />
-      <Stacks />
+      <CallToAction />
       <Footer />
     </div>
   );

@@ -5,6 +5,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -15,7 +18,6 @@
     font-size: 15px;
     line-height: 25px;
     background: $backgroundColor2;
-    box-sizing: border-box;
     font-family: 'Fira Code', monospace;
     h1 {
         font-family: 'Playfair Display', serif;
