@@ -5,11 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    padding: 10px 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: $backgrounColor2_element;
-    
+    padding: 30px;
+    margin: 50px auto;
+    background-color: $backgroundColor1;
+    border-top: 1px dashed $color3;
+    border-bottom: 1px dashed $color3;
+
     @media (min-width: 992px){ 
         margin: 100px;
         padding: 40px 50px;
@@ -43,15 +44,17 @@
                 border-bottom: 1px dashed $color7;
             }
             p{ 
-                
-                text-align: justify;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 
             }  
             h5{
-                font-size: 17px;
+                font-size: 15px;
                 color: $fontColor_3;
+
+                @media (min-width: 992px){ 
+                    font-size: 17px;
+                }
             }
             
             img {
