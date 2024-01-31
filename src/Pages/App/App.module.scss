@@ -9,6 +9,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+body{
+    background: $backgroundColor2;
+}
 ::-webkit-scrollbar {
     display: none;
 }

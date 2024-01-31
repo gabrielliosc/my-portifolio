@@ -1,11 +1,9 @@
-import React from 'react';
-
 //Import Components
 import Project from '../../components/project';
 import Menu from '../../components/menu';
 import Experience from '../../components/experience';
 import About from '../../components/about';
-import CallToAction from '../../components/callToAction';
+// import CallToAction from '../../components/callToAction';
 import Courses from '../../components/course';
 import Stacks from '../../components/stacks';
 
@@ -26,7 +24,7 @@ function App() {
       <Experience />
       <Courses />
       <Articles />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <Footer />
     </div>
   );
