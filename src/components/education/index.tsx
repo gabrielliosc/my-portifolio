@@ -29,6 +29,7 @@ export default function Education({className}: {className?: string} ) {
                         <h4>{educItem.subject}</h4>
                         <h5>{educItem.university}</h5>
                     </span>
+                    <span className={style.line}><hr /></span>
                 </li>
             ))}
             </ul>

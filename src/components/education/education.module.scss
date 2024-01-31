@@ -8,11 +8,10 @@
     padding: 0px 50px;
     margin-top: 50px;
     margin-bottom: 40px;
-    background-color: $backgrounColor2_element;
+    background-color: $backgroundColor1;
 
     @media (min-width: 992px){ 
         border-radius: 10px;
-        background-color: $backgroundColor1;
         align-self: center;
     }
     ul {
@@ -27,6 +26,38 @@
         li{
             margin: 15px 0px;       
             list-style: none;   
+
+            span.line {
+                position: relative;
+                margin: 30px auto;
+                width: 80%;
+
+                @media(min-width: 992px){ 
+                    display: none;
+                }
+                hr {  
+                    background: $color3;
+                    border: 0;
+                    height: 1px;
+                    width: 100%;
+                        
+                        &:before{
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        background: $color3;
+                        display: inline-block;
+                        border: 2px solid $color3;
+                        position: absolute;
+                        top: -5px;
+                        left: 50%;
+                        margin: 0 0 0 -3px;
+                        transform:rotate(45deg);
+                        -ms-transform:rotate(45deg); 
+                        -webkit-transform:rotate(45deg);
+                        }
+                    }
+                }
             p.marker{
                 display: none;
             }
@@ -61,7 +92,11 @@
             font-weight: 300;
             @media (min-width: 992px){
                 font-size: 17px;
+                margin: 0px;
             }
+        }
+        h5 {
+            margin-bottom: 10px;
         }
         p{  
             width: fit-content;
