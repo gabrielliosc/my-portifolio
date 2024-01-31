@@ -5,6 +5,7 @@ import jsIcon from '../../../assets/img/JavaScript.png';
 import tsIcon from '../../../assets/img/TypeScript.png';
 import reactIcon from '../../../assets/img/react.svg';
 import reactrouterIcon from '../../../assets/img/react-router.svg';
+import muiIcon from '../../../assets/img/mui.svg';
 import SCSSIcon from '../../../assets/img/scss.svg';
 import styledIcon from '../../../assets/img/styled_components.png';
 import bootstrapIcon from '../../../assets/img/bootstrap.png';
@@ -39,6 +40,7 @@ import neo4jIcon from '../../../assets/img/neo4j.svg';
 //Icones do ciência de dados
 import d3jsIcon from '../../../assets/img/d3js.svg';
 import pandasIcon from '../../../assets/img/pandas.svg';
+import jupyterIcon from '../../../assets/img/jupyter.svg';
 
 
 import style from './stack.module.scss';
@@ -54,6 +56,9 @@ export default function Stack({stack}: {stack: string}) {
                 break
             case 'reactRouter':
                 return reactrouterIcon;
+                break
+            case 'mui':
+                return muiIcon;
                 break
             case 'javascript':
                 return jsIcon;
@@ -133,6 +138,8 @@ export default function Stack({stack}: {stack: string}) {
             case 'pandas':
                 return pandasIcon;
                 break
+            case 'jupyter':
+                return jupyterIcon
             default:
                 return '';
         }
@@ -151,6 +158,7 @@ export default function Stack({stack}: {stack: string}) {
             case 'html':
             case 'd3js':
             case 'git':
+            case 'jupyter':
                 return `${style.icon} + ${style.orange}`;
                 break
             case 'styledComponents':
@@ -187,6 +195,7 @@ export default function Stack({stack}: {stack: string}) {
             case 'canva':
             case 'postgresql':
             case 'pandas':
+            case 'mui':
                 return `${style.icon} + ${style.blue}`;
                 break
             default:

@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import style from '../section.module.scss';
 
 export default function DataScience() {
-    const stacks = ['python', 'd3js', 'pandas']
+    const stacks = ['python', 'd3js', 'pandas', 'jupyter']
     
     return(
         <div className={style.area}>
