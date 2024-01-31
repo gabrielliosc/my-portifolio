@@ -1,12 +1,10 @@
 @import '../../assets/styles/reference.scss';
 
 .nav{
-    background-color: $backgrounColor2_element;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
 
     @media (min-width: 992px){
+        display: flex;
         background-color: transparent;
         flex-direction: row;
         justify-content: space-between;

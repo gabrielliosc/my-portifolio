@@ -2,7 +2,7 @@ import style from './menu.module.scss';
 import logo from '../../assets/img/logo_gabrielli.png';
 
 import { Link } from 'react-scroll';
-import {v4 as uuidv4} from 'uuid'
+import {v4 as uuidv4} from 'uuid';
 
 export default function Menu() {
     const sections = [{
@@ -23,10 +23,12 @@ export default function Menu() {
     },{
         name: 'Artigos',
         route: 'articles'
-    },{
-        name: 'Contato',
-        route: 'cta'
-    }]
+    }
+    // ,{
+    //     name: 'Contato',
+    //     route: 'cta'
+    // }
+    ]
 
     return (
         <div className={style.nav}>   
