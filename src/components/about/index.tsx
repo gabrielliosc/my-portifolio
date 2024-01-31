@@ -23,7 +23,9 @@ export default function About() {
                 <div className={style.row2}>
                 <ReactTyped className={style.dev} strings={["> Desenvolvedora Frontend"]} typeSpeed={50} startWhenVisible={true} />
                     <h3>Gabrielli de Oliveira</h3>
+                    <span className={style.line}><hr /></span>
                     <p>Engenheira em transição de carreira, apaixonada por desenvolvimento web e empoderamento de mulheres. Motivada pelo aprendizado constante estou aprofundado meus conhecimentos por meio da pós-graduação em Engenharia de Software.</p>
+                    <span className={style.line}><hr /></span>
                     <p><button className={style.buttonAll} onClick={() => setEducation(!education)}> {education? 'Fechar formação' : 'Ver formação completa'}</button></p> 
                     <Contact></Contact>
                 </div>
