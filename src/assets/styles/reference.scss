@@ -1,22 +1,23 @@
 //Color Pallete
-$color1: #dd44c7 ;
+$color1: #dd44c7;
 $color2: #c757ca;
-$color3: #c9186a ;
-$color3_op: #c9186bbb ;
-$color4: #030422;
+$color3: #c9186a;
+$color3_op: #c9186bbb;
+$color4: #0c0322;
 $color5: #291b4d;
 $color6: #321b4d;
 $color7: #6c528b;
 $color8: #9ba3f5;
 $gradient: linear-gradient(360deg, $color3 0%, $color6 25%, $color5 50%, $color4 100%);
 
-
 $fontColor: #3b3b3b;
 $fontColor_2: #eeebeb;
 $fontColor_3: #d65b95 ;
 
 $backgroundColor1: #1c181c;
-$backgrounColor2_element: #110e11;
 $backgroundColor2: linear-gradient(#110e11 0%, #0b070b 100%);
+
+$backgroundColor1_element: #020817;
+$backgrounColor2_element: #110e11;
 
 $borderColor1: #2b262b;
