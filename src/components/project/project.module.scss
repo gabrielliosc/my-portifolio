@@ -1,16 +1,17 @@
 @import '../../assets/styles/reference.scss';
 
 .projects {
-    padding: 10px 50px;
+    padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: $backgrounColor2_element;
+    border-top: 1px dashed $color3;
+    border-bottom: 1px dashed $color3;
+    background-color: $backgroundColor1;
 
     @media (min-width: 992px){ 
         margin: 100px;
         padding: 40px;
         padding-left: 50px;
-        background-color: $backgroundColor1;
         border: 2px solid $borderColor1;
         border-radius: 10px;      
         width: 1150px;
@@ -18,19 +19,31 @@
     }
 
     ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
         @media (min-width: 992px){
             display: grid;
             grid-template-columns: 33% 33% 33%;
             margin: 0 auto;
-            gap: 20px;
         }
         li{ 
-            border: 1px dashed $color7;
+            border: 1px solid $color6;
             border-radius: 20px;
-            box-shadow: 0px 2px 10px 4px $color6;
-            padding: 10px;
+            box-shadow: inset 0px 0px 20px -5px $color6;
+            padding: 15px;
             margin: 15px;         
             list-style: none;
+
+            button.buttonProject{
+                display: none;
+            }
+            
+            img.projectImg, img.mobileImg {
+                width: 100%;
+                height: auto;
+            }
 
             @media (min-width: 992px){
                 display: flex;
@@ -41,23 +54,29 @@
                 box-shadow: 0px 0px 13px 5px $backgrounColor2_element;
                 width: 270px;
                 min-height: 300px;
+                padding: 10px;
+
+                .mobileImg {
+                    display: none;
+                }
 
                 button.buttonProject {
+                    display: block;
                     background-color: transparent;
                     border: none;
 
-                    img.projectImg{                        
+                    
+                    img.projectImg{                       
                         transition: all 200ms ease-out;
                         width: 250px;
                         height: 150px;
                         cursor: url('../../assets/img/cursor_zoom.svg'), auto;
                         
-
                         &:hover {
                             transform: rotate(5deg);
                         }
                     }
-                }
+                }                
             }
             p{
                 padding: 5px 0px;
@@ -128,6 +147,8 @@
         margin-bottom: 40px;
     }
 }
+
+
 
 //Configuração do modal
 .modal {
