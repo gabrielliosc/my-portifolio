@@ -1,0 +1,69 @@
+/*Ligth Mode*/
+:root {
+    --MainFontColor: #140f14;
+    --SecondaryFontColor: #c9186a;
+    --FontColor: #eeebeb;
+    
+    //Background
+    --BackgroundSection: #DCDFE4;
+    --BackgroundGradient: linear-gradient(#F7F8F9 0%, #F1F2F4 100%);
+    --GradientPinkPurple: linear-gradient(135deg, #0c0322 0%,#753a88 15%, #cc2b5e 50%, #753a88 85%, #0c0322 100%);
+    --BackgroundMenu: #F7F8F9;
+    --BackgroundStack: #24052ea4;
+    --BackgroundHr: #c757ca;
+
+    //White
+    --White: #f0e1e181;
+
+    //Black
+    --Black: #0202024d;
+
+    //Purple
+    --DarkPurple: #291b4d;
+    --Purple: #321b4d;
+    --LigthPurple: #6c528b;
+    --PurpleTransparency: #7203f04d;
+    --Lilac: #9ba3f5;
+
+    //Pink
+    --DarkPink: #c9186a;
+    --Pink: #dd44c7;
+    --LigthPink: #c757ca;
+    --PinkTransparency: #f003b54d;
+    --LigthPinkTransparency: #de73974d;
+
+    //Blue
+    --DarkBlue: #0c0322;
+    --Blue: #009ffc4d;
+
+    //Green
+    --Green: #0199084d;
+
+    //Yellow
+    --Yellow: #cfb1054d;
+
+    //Orange
+    --Orange: #c075054d;
+
+    //Red
+    --Red: #c00b054d;
+
+    //Border color
+    --BorderColor: #3e0d5f4f;
+    --Border: #353434;
+}
+/*Dark Mode*/
+.dark {
+    --MainFontColor: #eeebeb;
+    --SecondaryFontColor: #d65b95;
+
+    //Background
+    --BackgroundSection: #1c181c;
+    --BackgroundGradient: linear-gradient(#110e11 0%, #0b070b 100%);
+    --BackgroundMenu: #110e11;
+    --BackgroundStack: #30283099;
+    --BackgroundHr: #c9186a;
+
+    //Border color
+    --BorderColor: #2b262b;
+}
