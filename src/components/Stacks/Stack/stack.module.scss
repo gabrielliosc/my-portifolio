@@ -1,0 +1,68 @@
+.stack { 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--FontColor);
+    background-color: var(--BackgroundStack);
+    box-shadow: 0px 0px 0px 0px black;
+    width: 135px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+
+    @media (min-width: 992px){
+        width: 160px;
+        font-size: 16px;
+    }
+
+    img.icon{
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .white {
+        background-color: var(--White);
+        border: 2px solid var(--White);
+    }
+    .black {
+        background-color: var(--Black);
+        border: 2px solid var(--Black);
+    }
+    .blue {
+        background-color: var(--Blue);
+        border: 2px solid var(--Blue);
+    }
+    .green {
+        background-color: var(--Green);
+        border: 2px solid var(--Green);
+    }
+    .purple {
+        background-color: var(--PurpleTransparency);
+        border: 2px solid var(--PurpleTransparency);
+    }
+    .yellow {
+        background-color: var(--Yellow);
+        border: 2px solid var(--Yellow);
+    }
+    .orange {
+        background-color: var(--Orange);
+        border: 2px solid var(--Orange);
+    }
+    .red {
+        background-color: var(--Red);
+        border: 2px solid var(--Red);
+    }
+    .pink {
+        background-color: var(--PinkTransparency);
+        border: 2px solid var(--PinkTransparency);
+    }
+    .ligthpink {
+        background-color: var(--LigthPinkTransparency);
+        border: 2px solid var(--LigthPinkTransparency);
+    }
+}
+
+

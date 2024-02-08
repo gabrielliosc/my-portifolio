@@ -1,0 +1,127 @@
+@media (min-width: 992px){ 
+    
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+.dev{
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--SecondaryFontColor);
+
+    @media(min-width: 992px){
+        font-size: 25px;
+        text-align: start;
+    }
+}
+
+h3.name{
+    font-weight: 200;
+    color: var(--SecondaryFontColor);
+    opacity: 0.7;
+
+    @media(min-width: 992px){
+        font-size: 17px;
+        padding-top: 5px;
+        margin-top: 5px;
+        text-align: start;
+        width: 300px;
+    }
+}
+img.profile{        
+    height: 350px;
+    width: 350px;
+    margin-bottom: 20px;        
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    @media(min-width: 992px){ 
+        width: 350px;
+        height: 350px;          
+    }  
+}
+.row1{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+
+    @media(min-width: 992px){ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: 0;
+    }
+}
+.row2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+
+    @media(min-width: 992px){ 
+        align-items: flex-start;
+    }
+
+    span.line {
+        position: relative;
+        margin: 30px auto;
+        width: 80%;
+        @media(min-width: 992px){ 
+            display: none;
+        }
+        hr {
+            background: var(--BackgroundHr);
+            border: 0;
+            height: 1px;
+            width: 100%;
+                
+                &:before{
+                content: "";
+                width: 6px;
+                height: 6px;
+                background: var(--BackgroundHr);
+                display: inline-block;
+                border: 2px solid var(--BackgroundHr);
+                position: absolute;
+                top: -5px;
+                left: 50%;
+                margin: 0 0 0 -3px;
+                transform:rotate(45deg);
+                -ms-transform:rotate(45deg); 
+                -webkit-transform:rotate(45deg);
+                }
+            }
+        }
+
+    @media(min-width: 992px){ 
+        justify-content: center;
+        width: 60%;
+        margin: 0;
+
+        p.about {
+            text-align: left;
+            margin-top: 10px;
+        }   
+    }
+    .buttonAll {
+        background-color: transparent;
+        border: none;
+        font-family: 'Fira Code', monospace;
+        font-size: 14px;
+        color: var(--SecondaryFontColor);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--Purple);
+            color: var(--FontColor);
+        }
+    }
+}
+.none {
+    display: none;
+}

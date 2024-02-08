@@ -1,0 +1,30 @@
+.section {
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px dashed var(--DarkPink);
+    border-bottom: 1px dashed var(--DarkPink);
+    background-color: var(--BackgroundSection);
+
+    @media (min-width: 992px){ 
+        margin: 100px;
+        padding: 40px;
+        padding-left: 50px;
+        border: 2px solid var(--BorderColor);
+        border-radius: 10px;      
+        width: 1150px;
+        align-self: center;        
+    }
+
+    h1{ 
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        width: fit-content;
+        text-align: center;
+        span{
+            margin: 10px;
+        }
+        margin-bottom: 40px;
+    }
+}

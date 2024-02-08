@@ -1,0 +1,29 @@
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+    a{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--MainFontColor);
+        padding: 5px;
+        background-color: var(--BackgroundMenu);
+        border-radius: 5px;
+
+        img {
+            width: auto;
+            height: 25px;
+            padding-right: 5px;
+        }
+
+        &:hover{
+            color: var(--FontColor);
+            background-color: var(--DarkBlue);
+        }
+    }
+}

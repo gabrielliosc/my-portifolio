@@ -1,0 +1,88 @@
+.contact {    
+    padding: 10px 0px;    
+    margin-top: 15px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0px 10px;
+        padding: 5px;
+
+        @media (min-width: 992px){ 
+            justify-content: flex-start;
+            margin: 0px;
+            padding: 0px;
+        }
+        li{ 
+            list-style: none;
+            text-align: center;
+
+            @media (min-width: 992px){
+                padding-right:10px;
+                text-align: start;
+            }
+            a{  
+                display: block; 
+                position: relative;     
+                height: 60px;
+                width: 60px; 
+                color: var(--FontColor);
+                text-decoration: none;  
+                margin: 10px;           
+                padding: 15px;    
+                border: 3px solid var(--Border);        
+                border-radius: 10px;   
+                background-color: var(--Purple);  
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center; 
+                @media (min-width: 992px){ 
+                    margin-left: 0px; 
+                }
+                .tooltiptext{
+                    font-size: 10px;
+                    visibility: hidden;
+                    width: 150px;
+                    color: var(--MainFontColor);
+                    background-color: var(--BackGroundSection);
+                    text-align: center;
+                    border: 1px solid var(--Lilac);
+                    border-radius: 6px;
+                    padding: 5px;
+                    position: absolute;
+                    top: 110%;
+                    left: -50%;
+                    z-index: 1;
+                }
+            } 
+            a.email{        
+                background-image: url('../../assets/img/email.svg');
+            } 
+            a.github{        
+                background-image: url('../../assets/img/github-icon.svg');
+            } 
+            a.linkedin{        
+                background-image: url('../../assets/img/linkedin.svg');
+            }   
+            a.cv{
+                display: flex;
+                align-items: center;        
+                width: auto;
+                font-size: 14px;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }   
+            a:hover{
+                border: 3px solid var(--LigthPurple);
+                .tooltiptext{
+                    visibility: visible;
+                }
+            }        
+        }
+    }
+}

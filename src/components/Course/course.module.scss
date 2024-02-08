@@ -1,0 +1,124 @@
+img.certificate{
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+    @media (min-width: 992px){ 
+        margin: 5px;
+    }
+}
+    
+.content{
+    
+    @media (min-width: 992px){
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        ::-webkit-scrollbar {
+            display: block;
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: var(--BackgroundGradient);
+        }  
+        ::-webkit-scrollbar-track {
+            background: var(--BorderColor);
+        }
+
+
+        .panel{
+            padding: 15px;
+            margin: 15px;  
+            height: 450px;
+            width: 60%;                
+            background: var(--GradientPinkPurple);
+            opacity: 0.9;
+            box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+            font-size: 15px;
+
+            img.certificate{
+                margin: 5px;
+                padding-top: 20px; 
+                height: 400px;
+                width: 600px;
+            }  
+        }   
+    }    
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+    .list__item { 
+        width: 40%;
+        border: 1px dashed var(--LigthPurple);
+        border-radius: 20px;
+        box-shadow: 0px 2px 10px 4px var(--Purple);
+        padding: 10px;        
+        
+        @media (min-width: 992px) {   
+            width: 100%;    
+            margin: 15px;           
+            border: 2px solid var(--LigthPurple);
+            box-shadow: 0px 0px 13px 5px var(--BackgroundSection);
+        }   
+    }
+    button {
+        width: 17vw;
+        max-width: 80%;
+        background-color: var(--BackgroundSection);
+        text-align: start;
+        cursor: pointer;
+
+        h3{
+            font-size: 13px;
+            color: var(--SecondaryFontColor);
+
+            @media (min-width: 992px){
+                font-size: 14px;                
+                
+            }
+        }
+        p{
+            display: none;
+
+            @media (min-width: 992px){ 
+                display: block;
+                font-size: 14px;
+                padding-top: 5px;
+                color: var(--MainFontColor);  
+            }
+        }
+        &:focus {
+            background-color: var(--MainFontColor);
+            p {
+                color: var(--BackgroundSection);
+            }
+        }
+    }
+    @media (min-width: 992px){ 
+        width: 30%;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+}
+h1{ 
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    width: fit-content;
+    text-align: center;
+    span{
+        margin: 10px;
+    }
+    margin-bottom: 40px;
+}

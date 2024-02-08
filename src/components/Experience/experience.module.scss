@@ -1,0 +1,50 @@
+ul.experience {
+    margin-top: 20px;
+
+    li {
+        margin-top: 20px;
+        list-style: none;
+        width: 100%;
+
+        h4 {
+            border: 1px solid var(--LigthPurple);
+            box-shadow: -10px 10px 0px 0px var(--Purple);
+            padding: 5px;
+            margin-bottom: 20px;
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+
+        h5.title {
+            font-size: 17px;
+            color: var(--MainFontColor);
+            width: fit-content;
+            border-bottom: 1px dashed var(--MainFontColor);
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        h6 {
+            font-size: 15px;
+            color: var(--SecondaryFontColor);
+
+            @media (min-width: 992px) {
+                font-size: 17px;
+            }
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+    }
+}

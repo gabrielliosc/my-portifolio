@@ -1,0 +1,109 @@
+@import '../../assets/styles/reference.scss';
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $backgroundColor1;
+    padding: 10px 50px;
+    margin: 50px auto;
+    border-top: 1px dashed $color3;
+    border-bottom: 1px dashed $color3;
+    
+
+    @media (min-width: 992px){ 
+        flex-direction: row;
+        margin: 100px;
+        padding: 40px;
+        padding-left: 50px;
+        border-radius: 10px;
+        border: 3px solid $borderColor1;
+        width: 1150px;
+        align-self: center;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @media (min-width: 992px){ 
+            padding: 50px;
+            width: 50%;
+        }
+
+        .cta__image {
+            height: 230px;
+        }
+
+        span p{
+            margin: 15px; 
+            font-size: 18px;
+        }
+        p.title{
+            font-size: 20px;
+            color: $fontColor_3;
+            font-weight: 600;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+        @media (min-width: 992px){ 
+            padding: 50px;
+            width: 50%;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+
+            span::after{
+                content: "*";
+                font-size: 13px;
+                color: rgb(184, 2, 2);
+                vertical-align: text-bottom;
+            }
+
+            input {
+                font-size: 15px;
+                width: 350px;
+                padding: 10px;
+                border-radius: 5px;
+                width: 90%;
+
+                &::placeholder {
+                    font-family: 'Fira Code', monospace;
+                }
+            }
+            textarea {
+                font-size: 15px;
+                padding: 10px;
+                border-radius: 5px;
+                width: 90%;
+                resize: vertical;
+                
+                &::placeholder {
+                    font-family: 'Fira Code', monospace;
+                }
+            }
+        }
+        button {
+            width: 100px;
+            padding: 10px 5px;
+            border-radius: 5px;
+            background-color: $color5;
+            color: $fontColor_2;
+            font-family: 'Fira Code', monospace;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color3;
+            }
+        }
+    }
+}
+

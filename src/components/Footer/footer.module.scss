@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(--BackgroundSection);
+    text-align: end;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 5px 10px;
+    a {
+        color: var(--SecondaryFontColor);
+    }
+}
