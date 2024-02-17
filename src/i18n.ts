@@ -42,6 +42,18 @@ i18n.use(initReactI18next).init({
                     "newsletter": {"title": 'Página de newsletter',
                                     "description": "Desafio 40 do #boraCodar da Rocketseat"
                                     },
+                    "layout_intermediario": {"title": 'Página de empresa de viagem',
+                                    "description": "Projeto de layout intermediário proposto no curso da Rocketseat"
+                                    },
+                    "layout_avancado": {"title": 'Página de empresa de segurança',
+                    "description": "Projeto de layout avançado proposto no curso da Rocketseat"
+                                    },
+                    "formulario": {"title": 'Formulário de mentoria',
+                    "description": "Projeto de um formulário proposto no curso da Rocketseat"
+                                    },
+                    "responsividade": {"title": 'Blog de gatos',
+                    "description": "Projeto de um blog responsivo proposto no curso da Rocketseat"
+                                    },
                     "peg": {"title": 'Plataforma educacional gameficada - PEG',
                             "description": "Plataforma desenvolvida para o Hack for Change"
                             },
@@ -127,6 +139,18 @@ i18n.use(initReactI18next).init({
                                     },
                     "newsletter": {"title": 'Newsletter Page',
                                     "description": "40th Challenge from Rocketseat's #boraCodar"
+                                    },
+                    "layout_intermediario": {"title": 'Tourism company page',
+                                    "description": "Intermediate challenge from Rocketseat's course"
+                                    },
+                    "layout_avancado": {"title": 'Data security page',
+                    "description": "Advanced challenge from Rocketseat's course"
+                                    },
+                    "formulario": {"title": 'Mentorship survey',
+                    "description": "Survey challenge from Rocketseat's course"
+                                    },
+                    "responsividade": {"title": 'Cat blog',
+                    "description": "Responsive blog challenge from Rocketseat's course"
                                     },
                     "peg": {"title": 'Educational game website',
                             "description": "Project developed in a team during the Hackathon, Hack for change"

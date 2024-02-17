@@ -8,6 +8,10 @@ import demoIcon from '../../assets/img/demo.png';
 //Imagens dos projetos realizados
 import dailyPlanner from '../../assets/img/daily_planner.png';
 import newsletter from '../../assets/img/newsletter.png';
+import layoutIntermediario from '../../assets/img/layout_intermediario.png';
+import layoutAvancado from '../../assets/img/layout_avancado.png';
+import formulario from '../../assets/img/formulario.png';
+import blogResponsivo from '../../assets/img/responsividade.png';
 import landingPage from '../../assets/img/landing_page.png';
 import peg from '../../assets/img/peg.png';
 import artist from '../../assets/img/artista.png';
@@ -40,6 +44,39 @@ export function Project() {
         "imagem": newsletter
     },{
         "id": uuidv4(),
+        "name": t(`projects.${'layout_intermediario'}.${'title'}`),
+        "demo": 'https://estudos-layout-intermediario.vercel.app/',
+        "repository": 'https://github.com/gabrielliosc/estudos/tree/main/Rocketseat-desafio/recriando-layout/intermediario',
+        "description": t(`projects.${'layout_intermediario'}.${'description'}`),
+        "stack": ['CSS', 'HTML', 'Figma'],
+        "imagem": layoutIntermediario
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'layout_avancado'}.${'title'}`),
+        "demo": 'https://estudos-layout-avancado.vercel.app/',
+        "repository": 'https://github.com/gabrielliosc/estudos/tree/main/Rocketseat-desafio/recriando-layout/avançado',
+        "description": t(`projects.${'layout_avancado'}.${'description'}`),
+        "stack": ['CSS', 'HTML', 'Figma'],
+        "imagem": layoutAvancado
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'formulario'}.${'title'}`),
+        "demo": 'https://estudos-topaz-nine.vercel.app/',
+        "repository": 'https://github.com/gabrielliosc/estudos/tree/main/Rocketseat-desafio/formulario-intermediario',
+        "description": t(`projects.${'formulario'}.${'description'}`),
+        "stack": ['CSS', 'HTML', 'Figma'],
+        "imagem": formulario
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'responsividade'}.${'title'}`),
+        "demo": '',
+        "repository": 'https://github.com/gabrielliosc/estudos/tree/main/Rocketseat-desafio/responsividade',
+        "description": t(`projects.${'responsividade'}.${'description'}`),
+        "stack": ['CSS', 'HTML', 'Figma'],
+        "imagem": blogResponsivo
+    },
+    {
+        "id": uuidv4(),
         "name": t(`projects.${'peg'}.${'title'}`),
         "demo": '',
         "repository": 'https://github.com/gabrielliosc/hack-for-change',
@@ -57,7 +94,7 @@ export function Project() {
     },{
         "id": uuidv4(),
         "name": t(`projects.${'landing_page'}.${'title'}`),
-        "demo": '',
+        "demo": 'https://landing-page-ten-beige-94.vercel.app/',
         "repository": 'https://github.com/Mulheres-e-Tecnologia-M-T/projetos',
         "description": t(`projects.${'landing_page'}.${'description'}`),
         "stack": ['CSS','HTML','Figma'],
