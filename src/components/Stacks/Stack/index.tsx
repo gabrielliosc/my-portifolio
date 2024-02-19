@@ -13,6 +13,7 @@ import angularIcon from '../../../assets/img/angular.svg';
 import viteIcon from '../../../assets/img/vite.svg';
 import lighthouseIcon from '../../../assets/img/lighthouse.png';
 import i18nIcon from '../../../assets/img/i18n.png';
+import tailwindIcon from '../../../assets/img/tailwind.svg';
 
 //Icones do design
 import figmaIcon from '../../../assets/img/figma.svg';
@@ -100,6 +101,9 @@ export function Stack({stack}: {stack: string}) {
                 break
             case 'canva':
                 return canvaIcon;
+                break
+            case 'tailwind':
+                return tailwindIcon;
                 break
             case 'python':
                 return pythonIcon;
@@ -203,6 +207,7 @@ export function Stack({stack}: {stack: string}) {
             case 'postgresql':
             case 'pandas':
             case 'mui':
+            case 'tailwind':
                 return `${style.icon} + ${style.blue}`;
                 break
             default:

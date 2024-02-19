@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import style from '../stacks.module.scss';
 
 export function Frontend() {
-    const stacks = ['html', 'css', 'javascript', 'typescript', 'sass', 'reactjs', 'reactRouter', 'mui', 'styledComponents', 'vite', 'angular', 'd3js', 'i18n']
+    const stacks = ['html', 'css', 'javascript', 'typescript', 'sass', 'reactjs', 'reactRouter', 'mui', 'styledComponents', 'vite', 'angular', 'd3js', 'i18n', 'tailwind']
     //bootstrap, lightHouse
     return(
         <div className={style.area}>
