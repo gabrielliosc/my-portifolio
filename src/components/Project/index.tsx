@@ -12,6 +12,8 @@ import layoutIntermediario from '../../assets/img/layout_intermediario.png';
 import layoutAvancado from '../../assets/img/layout_avancado.png';
 import formulario from '../../assets/img/formulario.png';
 import blogResponsivo from '../../assets/img/responsividade.png';
+import exploreSemLimites from '../../assets/img/explore-sem-limites.png';
+import biscoitoSorte from '../../assets/img/biscoito-da-sorte.png';
 import landingPage from '../../assets/img/landing_page.png';
 import peg from '../../assets/img/peg.png';
 import artist from '../../assets/img/artista.png';
@@ -37,7 +39,7 @@ export function Project() {
     },{
         "id": uuidv4(),
         "name": t(`projects.${'newsletter'}.${'title'}`),
-        "demo": '',
+        "demo": 'https://gabrielliosc.github.io/desafio-40/',
         "repository": 'https://github.com/gabrielliosc/desafio-40',
         "description": t(`projects.${'newsletter'}.${'description'}`),
         "stack": ['CSS', 'HTML', 'Figma'],
@@ -69,13 +71,28 @@ export function Project() {
     },{
         "id": uuidv4(),
         "name": t(`projects.${'responsividade'}.${'title'}`),
-        "demo": '',
-        "repository": 'https://github.com/gabrielliosc/estudos/tree/main/Rocketseat-desafio/responsividade',
+        "demo": 'https://gabrielliosc.github.io/blog-gatos/',
+        "repository": 'https://github.com/gabrielliosc/blog-gatos',
         "description": t(`projects.${'responsividade'}.${'description'}`),
         "stack": ['CSS', 'HTML', 'Figma'],
         "imagem": blogResponsivo
-    },
-    {
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'explore'}.${'title'}`),
+        "demo": 'https://gabrielliosc.github.io/explore-sem-limites/',
+        "repository": 'https://github.com/gabrielliosc/explore-sem-limites',
+        "description": t(`projects.${'explore'}.${'description'}`),
+        "stack": ['CSS', 'HTML','Figma'],
+        "imagem": exploreSemLimites
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'biscoito'}.${'title'}`),
+        "demo": 'https://gabrielliosc.github.io/biscoito-da-sorte/',
+        "repository": 'https://github.com/gabrielliosc/biscoito-da-sorte',
+        "description": t(`projects.${'biscoito'}.${'description'}`),
+        "stack": ['CSS', 'HTML','Javascript','Figma'],
+        "imagem": biscoitoSorte
+    },{
         "id": uuidv4(),
         "name": t(`projects.${'peg'}.${'title'}`),
         "demo": '',

@@ -54,6 +54,12 @@ i18n.use(initReactI18next).init({
                     "responsividade": {"title": 'Blog de gatos',
                     "description": "Projeto de um blog responsivo proposto no curso da Rocketseat"
                                     },
+                    "explore": {"title": 'Explore sem limite',
+                    "description": "Projeto de revisão proposto no curso da Rocketseat"
+                                    },
+                    "biscoito": {"title": 'Biscoito da sorte',
+                        "description": "Projeto do jogo do biscoito da sorte proposto no curso da Rocketseat"
+                    },
                     "peg": {"title": 'Plataforma educacional gameficada - PEG',
                             "description": "Plataforma desenvolvida para o Hack for Change"
                             },
@@ -152,6 +158,12 @@ i18n.use(initReactI18next).init({
                     "responsividade": {"title": 'Cat blog',
                     "description": "Responsive blog challenge from Rocketseat's course"
                                     },
+                    "explore": {"title": 'Explore without limit',
+                    "description": "Review challenge from Rocketseat's course"
+                                    },
+                    "biscoito": {"title": 'Fortune cookie',
+                        "description": "Fortune cookie game challenge from Rocketseat's course"
+                    },
                     "peg": {"title": 'Educational game website',
                             "description": "Project developed in a team during the Hackathon, Hack for change"
                             },
