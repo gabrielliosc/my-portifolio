@@ -14,6 +14,8 @@ import formulario from '../../assets/img/formulario.png';
 import blogResponsivo from '../../assets/img/responsividade.png';
 import exploreSemLimites from '../../assets/img/explore-sem-limites.png';
 import biscoitoSorte from '../../assets/img/biscoito-da-sorte.png';
+import universe from '../../assets/img/spa-universe.png';
+import gitfav from '../../assets/img/gitfav.png';
 import landingPage from '../../assets/img/landing_page.png';
 import peg from '../../assets/img/peg.png';
 import artist from '../../assets/img/artista.png';
@@ -92,6 +94,22 @@ export function Project() {
         "description": t(`projects.${'biscoito'}.${'description'}`),
         "stack": ['CSS', 'HTML','Javascript','Figma'],
         "imagem": biscoitoSorte
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'universe'}.${'title'}`),
+        "demo": 'https://gabrielliosc.github.io/SPA-Universe/',
+        "repository": 'https://github.com/gabrielliosc/SPA-Universe',
+        "description": t(`projects.${'universe'}.${'description'}`),
+        "stack": ['CSS', 'HTML','Javascript', 'SPA','Figma'],
+        "imagem": universe
+    },{
+        "id": uuidv4(),
+        "name": t(`projects.${'gitfav'}.${'title'}`),
+        "demo": 'https://gabrielliosc.github.io/gitfav/',
+        "repository": 'https://github.com/gabrielliosc/gitfav',
+        "description": t(`projects.${'gitfav'}.${'description'}`),
+        "stack": ['CSS', 'HTML','Javascript', 'API','Figma'],
+        "imagem": gitfav
     },{
         "id": uuidv4(),
         "name": t(`projects.${'peg'}.${'title'}`),

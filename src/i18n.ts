@@ -60,6 +60,12 @@ i18n.use(initReactI18next).init({
                     "biscoito": {"title": 'Biscoito da sorte',
                         "description": "Projeto do jogo do biscoito da sorte proposto no curso da Rocketseat"
                     },
+                    "universe": {"title": 'SPA Universe',
+                        "description": "Projeto de uma SPA (Single Page Application) proposto no curso da Rocketseat"
+                    },
+                    "gitfav": {"title": 'GitFav',
+                        "description": "Projeto de integração com a API do github para salvar os usuários favoritos proposto no curso da Rocketseat"
+                    },
                     "peg": {"title": 'Plataforma educacional gameficada - PEG',
                             "description": "Plataforma desenvolvida para o Hack for Change"
                             },
@@ -163,6 +169,12 @@ i18n.use(initReactI18next).init({
                                     },
                     "biscoito": {"title": 'Fortune cookie',
                         "description": "Fortune cookie game challenge from Rocketseat's course"
+                    },
+                    "universe": {"title": 'SPA Universe',
+                        "description": "SPA (Single Page Application) challenge from Rocketseat's course"
+                    },
+                    "gitfav": {"title": 'GitFav',
+                        "description": "github's API fetch challenge from Rocketseat's course"
                     },
                     "peg": {"title": 'Educational game website',
                             "description": "Project developed in a team during the Hackathon, Hack for change"
